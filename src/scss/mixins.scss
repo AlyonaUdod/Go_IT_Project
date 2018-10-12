@@ -4,3 +4,10 @@
     color: $color;
     font-family: 'Acrom', sans-serif;
 }
+
+
+@mixin display-options ($justify: space-between, $display: flex, $flow: row wrap) {
+    justify-content: $justify;
+    display: $display;
+    flex-flow: $flow;
+}
