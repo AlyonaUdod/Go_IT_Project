@@ -1,0 +1,6 @@
+@mixin text-style ($size: 14px, $weight: 400, $color: $text-color) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    font-family: 'Acrom', sans-serif;
+}
