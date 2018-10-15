@@ -1,0 +1,96 @@
+.section03 {
+    @extend %section-rules;
+    &__img {
+        margin: auto;
+    }
+    &__pretitle {
+        font-family: 'Acrom';
+        font-weight: 900;
+        font-size: 12px;
+        color: $white;
+        line-height: 11px;
+        text-transform: uppercase;
+        display: block;
+        width: 169px;
+        margin: auto;
+    }
+    &__span--01 {
+        @extend %span;
+        width: 87px;
+        margin-bottom: 5px;
+    }
+    &__span--02 {
+        @extend %span;
+        width: 169px;
+    }
+    &__par {
+        font-family: 'Acrom';
+        font-weight: 700;
+        font-size: 9px;
+        margin: 20px auto 8px;
+
+    }
+    &__text {
+        font-family: 'Acrom';
+        font-weight: 400;
+        font-size: 9px;
+    }
+    &__title {
+        font-family: 'Acrom';
+        font-weight: 900;
+        font-size: 11px;
+        display: block;
+        color: $white;
+        background-color: $black;
+        margin: 35px auto 13px;
+        text-transform: uppercase;
+        width: 161px;
+        &--par {
+            font-family: 'Acrom';
+            font-weight: 700;
+            display: block;
+            width: 176px;
+            margin: auto;
+            font-size: 9px;
+            &__conteiner {
+                width: 206px;
+                display: flex;
+                justify-content: center;
+                margin: auto auto 31px;
+                
+            }
+        }
+    }
+    &__before--conteiner {
+        width: 34px;
+        position: relative;
+        &::before {
+            display: block;
+            content: "";
+            width: 14px;
+            height: 2px;
+            background-color: $black;
+            position: absolute;
+            top: 5px;
+            left: 18px;
+        }
+    }
+    &__list {
+        list-style: square;
+        &--item {
+            margin-bottom: 20px;
+            &__title {
+                font-family: 'Acrom';
+                font-weight: 900;
+                font-size: 9px;
+                text-transform: uppercase;
+            }
+            &__par {
+                font-family: 'Acrom';
+                font-weight: 400;
+                font-size: 9px;
+            }
+        }    
+    }
+}
+
