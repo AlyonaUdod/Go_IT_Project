@@ -227,12 +227,12 @@
     }
     &-text__img320{
       background-image: url('../img/sec05-1440-oon.png');
-      height: 100%;
+      height: 101%;
       background-repeat: no-repeat;
       width: 100%;
       position: absolute;
       left: 0;
-      top: 2%;
+      top: 1%;
     }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       &-text__img320 {
@@ -243,10 +243,10 @@
       width: 391px;
     font-size: 35px;
     margin-top: 56px;
-    margin-left: 45%;
+    margin-left: 50%;
     }
     &-text__capture{
-      margin-left: 53%;
+      margin-left: 58%;
       font-size: 12px;
       margin-bottom: 50px;
     }
@@ -255,7 +255,7 @@
       height: 5px;
     }
     &-text__subtitle{
-      margin-left: 48%;
+      margin-left: 53%;
       font-size: 11px;
       width: 248px;
     }
@@ -264,7 +264,7 @@
       height: 10px;
     }
     &-text__subcapture{
-      margin-left: 48%;
+      margin-left: 53%;
       font-size: 12px;
       width: 234px;
       margin-bottom: 26px;
