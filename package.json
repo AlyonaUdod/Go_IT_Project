@@ -24,7 +24,7 @@
     "autoprefixer": "^8.4.1",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.6.1",
-    "browser-sync": "^2.24.4",
+    "browser-sync": "^2.26.1",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.1",
@@ -42,7 +42,7 @@
     "gulp-svgstore": "^6.1.1",
     "gulp-uglify": "^3.0.0",
     "run-sequence": "^2.2.1",
-    "stylelint": "^9.2.0"
+    "stylelint": "^9.6.0"
   },
   "dependencies": {}
 }
