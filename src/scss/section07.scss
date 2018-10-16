@@ -1,23 +1,24 @@
 .section07 {
     @extend %section-rules;
     @include display-options (center);
-    margin: 15px auto 25px;
+    margin-top: 15px;
 
         @media (min-width: 480px) {
-            margin: 20px auto 40px;
+            margin-top: 35px;
         }
+        
         @media (min-width: 768px) {
-            margin: 35px auto 55px;
+            margin-top: 85px;
             @include display-options ();
         }
         @media (min-width: 960px) {
-            margin: 45px auto 70px;
+            margin-top: 105px;
         }
         @media (min-width: 1200px) {
-            margin: 40px auto 65px;
+            margin-top: 105px;
         }
         @media (min-width: 1440px) {
-            margin: 50px auto 75px;
+            margin-top: 125px;
         } 
 
         &-img01 {

@@ -4,7 +4,24 @@
   min-width: 320px;
   font-family: Acrom;
   @extend %section-rules;
-  margin-top: 35px;
+  margin-top: 25px;
+
+    @media (min-width: 480px) {
+      margin-top: 45px;
+    }
+
+    @media (min-width: 768px) {
+        margin-top: 60px;
+    }
+    @media (min-width: 960px) {
+        margin-top: 85px;
+    }
+    @media (min-width: 1200px) {
+        margin-top: 90px;
+    }
+    @media (min-width: 1440px) {
+        margin-top: 100px;
+    } 
 
   &__subtitle {
     position: relative;
@@ -29,7 +46,7 @@
     &__inner-top-wrapper {
       display: flex;
       flex-wrap: wrap;
-      width: 48%;
+      width: 50%;
     }
 
     &__img {
@@ -144,10 +161,10 @@
     }  
   }
 
-  @include s9-middle-block-view ($s9-screen-md-min, 25px, 9px, -460%, 7px);
-  @include s9-middle-block-view ($s9-screen-lg-min, 50px, 11px, -495%, 7px);
-  @include s9-middle-block-view ($s9-screen-xl-min, 50px, 10px, -515%, 6px);
-  @include s9-middle-block-view ($s9-screen-xxl-min, 55px, 12px, -470%, 7.5px);
+  @include s9-middle-block-view ($s9-screen-md-min, 25px, 9px, -550%, 7px);
+  @include s9-middle-block-view ($s9-screen-lg-min, 50px, 11px, -590%, 7px);
+  @include s9-middle-block-view ($s9-screen-xl-min, 50px, 10px, -580%, 6px);
+  @include s9-middle-block-view ($s9-screen-xxl-min, 55px, 12px, -570%, 7.5px);
 }
 // ***************bottom-part***************
 
