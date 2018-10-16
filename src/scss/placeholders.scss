@@ -78,3 +78,27 @@
         height: 6px;
     } 
 }
+
+// **********************section-09-placeholders-start**********************
+
+%s9-orange-mark {
+    counter-increment: s9-item-number 1;
+    content: "[\a0 00" counter(s9-item-number) " \a0]";
+    background: $orange;
+    color: $white;
+    position: absolute;
+    font-size: 9px;
+    font-weight: bold;
+    line-height: 0.9;
+}
+
+%s9-slank-mark {
+    content: "";
+    position: absolute;
+    height: 1.5px;
+    width: 15px;
+    background: $black;
+    transform:  translate(-160%, 600%) rotate(-55deg);
+}
+
+// **********************section-09-placeholders-end**********************
