@@ -63,7 +63,7 @@ li {
 
 .section09 {
   margin: auto;
-  width: 320px;
+  width: 300px;
   padding: 0 10px;
 }
 
@@ -418,7 +418,6 @@ li {
 @media (min-width: 1440px) {
   .section09 {
     width: 860px;
-    padding: 0;
   }
 
   .section09__subtitle:before {
@@ -535,7 +534,6 @@ li {
 @media (min-width: 960px) and (max-width: 1199px) {
   .section09 {
     width: 800px;
-    padding: 0;
   }
 
   .section09__subtitle:before {
@@ -547,7 +545,6 @@ li {
 @media (min-width: 1200px) and (max-width: 1439px) {
   .section09 {
     width: 715px;
-    padding: 0;
   }
 
   .section09__subtitle:before {
