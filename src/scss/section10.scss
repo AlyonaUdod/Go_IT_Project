@@ -1,0 +1,984 @@
+.section10 {
+  @extend %section-rules;
+  // этим шаблоном задаем все контентные ширины на все 6 переломных точек
+  margin-top: 25px;
+  margin-bottom: 40px;
+
+  // ТУТ РАБОТАЕМ С ПЕРВОЙ ГЛОБАЛЬНОЙ ЧАСТЬЮ - ИНФОРМАЦИЯ
+  &-info {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+      @include text-style ($size: 12px, $weight: 800, $color: rgba(0, 0, 0, 255));
+      width: 252px;
+      margin: 0 auto 15px;
+      text-transform: uppercase;
+
+      &-about {
+        @include text-style ($size: 12px, $weight: 400, $color: rgba(0, 0, 0, 255));
+        width: 192px;
+        margin: 0 auto 25px;
+        padding-left: 18px;
+        position: relative;
+        order: 1;
+      }
+
+      &-about:before {
+        @extend %black-line;
+        top: 9px;
+        left: 0;
+      }
+    }
+
+    &__subtitle {
+      @include text-style ($size: 9px, $weight: 800, $color: $black);
+      width: 162px;
+      margin: 0 0 11px 53px;
+      text-transform: uppercase;
+    }
+
+    &__subtitle-about {
+      @include text-style ($size: 9px, $weight: 400, $color: $text-color);
+      width: 187px;
+      margin: 0 0 26px 53px;
+      }
+
+    &__img {
+      width: 296px;
+      margin: 0 auto 41px;
+    }
+  }
+
+  // ТЕПЕРЬ РАБОТАЕМ СО ВТОРОЙ ГЛОБАЛЬНОЙ ЧАСТЬЮ СЕКЦИИ - НАГРАДЫ
+  &-awards {
+    display: flex;
+    flex-direction: column;
+
+
+
+
+
+  }
+  // скобка списка с наградами
+}
+// скобка всей секции 10, для 320рх
+
+
+
+
+
+//     // работаем со списком наград, во второй часте - награды
+//     &__list {
+//       display: flex;
+//       flex-direction: column;
+//       width: 200px;
+//       margin-left: 55px;
+
+//       &--item {
+//         position: relative;
+//       }
+
+//       &--item:nth-child(-n+2) {
+//         margin-bottom: 28px;
+//       }
+
+//       &--item-title {
+//         @include text-style ($size: 9px, $weight: 800, $color: $black);
+//         margin-bottom: 10px;
+//         width: 110px;
+//         text-transform: uppercase;
+//       }
+
+//       &--item-about {
+//         @include text-style ($size: 9px, $weight: 400, $color: $text-color);
+//         width: 150px;
+//       }
+
+//       // теперь особенности каждой li
+//       &--item-about-stat {
+//         width: 167px;
+//       }
+
+//       // статуетка и цифра один
+//       &--item-stat:before {
+//         display: block;
+//         content: "";
+//         width: 25px;
+//         height: 49px;
+//         background-image: url('../img/sec10-320-01.png');
+//         position: absolute;
+//         top: -10px;
+//         right: 60px;
+//       }
+
+//       @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//         &--title:before {
+//         background-image: url('../img/sec10-320-01@2x.png');
+//         background-size: cover;
+//       }
+//       }
+
+//       &--item-stat:after {
+//         display: block;
+//         content: "";
+//         width: 27px;
+//         height: 90px;
+//         background-image: url('../img/sec10-320-stat.png');
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//       }
+
+//       @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//         &--title:after {
+//         background-image: url('../img/sec10-320-stat@2x.png');
+//         background-size: cover;
+//       }
+//       }
+
+//       // коробка 2
+//       &--item-box2:before {
+//         display: block;
+//         content: "";
+//         width: 26px;
+//         height: 50px;
+//         background-image: url('../img/sec10-320-02.png');
+//         position: absolute;
+//         top: -10px;
+//         right: 60px;
+//       }
+
+//       @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//         &--item-box2:before {
+//         background-image: url('../img/sec10-320-02@2x.png');
+//         background-size: cover;
+//       }
+//       }
+
+//       &--item-box2:after {
+//         display: block;
+//         content: "";
+//         width: 36px;
+//         height: 72px;
+//         background-image: url('../img/sec10-320-box.png');
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//       }
+
+//       @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//         &--item-box2:after {
+//         background-image: url('../img/sec10-320-box@2x.png');
+//         background-size: cover;
+//       }
+//       }
+
+//       // коробка 3
+//       &--item-box3:before {
+//         display: block;
+//         content: "";
+//         width: 26px;
+//         height: 50px;
+//         background-image: url('../img/sec10-320-03.png');
+//         position: absolute;
+//         top: -10px;
+//         right: 60px;
+//       }
+
+//       @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//         &--item-box3:before {
+//         background-image: url('../img/sec10-320-03@2x.png');
+//         background-size: cover;
+//       }
+//       }
+
+//       &--item-box3:after {
+//         display: block;
+//         content: "";
+//         width: 36px;
+//         height: 72px;
+//         background-image: url('../img/sec10-320-box.png');
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//       }
+
+//       @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//         &--item-box3:after {
+//         background-image: url('../img/sec10-320-box@2x.png');
+//         background-size: cover;
+//       }
+//       }
+
+// // МЕДИАПРАВИЛА ДЛЯ 480px!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// @media (min-width: 480px) and (max-width:767px) {
+//   .section10 {
+//     // этим шаблоном задаем все контентные ширины на все 6 переломных точек
+//     margin-top: 40px;
+//     margin-bottom: 60px;
+
+//     // ТУТ РАБОТАЕМ С ПЕРВОЙ ГЛОБАЛЬНОЙ ЧАСТЬЮ - ИНФОРМАЦИЯ
+//     &-info {
+
+//       &__title {
+//         @include text-style ($size: 18px, $weight: 800, $color: rgba(0, 0, 0, 255));
+//         width: 380px;
+//         margin: 0 auto 21px;
+
+//         &-about {
+//           @include text-style ($size: 14px, $weight: 400, $color: rgba(0, 0, 0, 255));
+//           width: 272px;
+//           margin: 0 auto 40px;
+//           padding-left: 28px;
+//         }
+//       }
+
+//       &__subtitle {
+//         @include text-style ($size: 14px, $weight: 800, $color: $black);
+//         width: 250px;
+//         margin: 0 0 16px 85px;
+//       }
+
+//       &__subtitle-about {
+//         @include text-style ($size: 14px, $weight: 400, $color: $text-color);
+//         width: 290px;
+//         margin: 0 0 40px 85px;
+//       }
+
+//       &__img {
+//         width: 445px;
+//         margin: 0 auto 62px;
+//       }
+//     }
+//     // скобка первой части инфо
+
+//     // ТЕПЕРЬ РАБОТАЕМ СО ВТОРОЙ ГЛОБАЛЬНОЙ ЧАСТЬЮ СЕКЦИИ - НАГРАДЫ
+//     &-awards {
+
+//       // первая часть наград - див оон
+//       &__oon {
+//         margin-left: 85px;
+//         width: 200px;
+
+//         &--go {
+//           @include text-style ($size: 12px, $weight: 500, $color: $white);
+//           width: 75px;
+//           margin-bottom: 38px;
+//         }
+
+//         &--recognized {
+//           @include text-style ($size: 12px, $weight: 500, $color: $white);
+//           width: 215px;
+//           margin-bottom: 32px;
+//         }
+
+//         &--title {
+//           @include text-style ($size: 14px, $weight: 800, $color: $black);
+//           margin-bottom: 13px;
+//           width: 190px;
+//         }
+
+//         &--title:after {
+//           display: block;
+//           content: "";
+//           width: 80px;
+//           height: 68px;
+//           background-image: url('../img/sec10-480-oon.png');
+//           position: absolute;
+//           top: -50px;
+//           right: -100px;
+//         }
+
+//         @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//           &--title:after {
+//           background-image: url('../img/sec10-480-oon@2x.png');
+//           background-size: cover;
+//         }
+//         }
+
+//         &--subtitle {
+//           @include text-style ($size: 14px, $weight: 400, $color: $text-color);
+//           margin-bottom: 45px;
+//           width: 290px;
+//         }
+//       }
+
+//       // работаем со списком наград, во второй часте - награды
+//       &__list {
+//         width: 310px;
+//         margin-left: 85px;
+
+//         &--item {
+//           position: relative;
+//         }
+
+//         &--item:nth-child(-n+2) {
+//           margin-bottom: 45px;
+//         }
+
+//         &--item-title {
+//           @include text-style ($size: 14px, $weight: 800, $color: $black);
+//           margin-bottom: 14px;
+//           width: 172px;
+//         }
+
+//         &--item-about {
+//           @include text-style ($size: 14px, $weight: 400, $color: $text-color);
+//           width: 232px;
+//         }
+
+//         // теперь особенности каждой li
+//         &--item-about-stat {
+//           width: 258px;
+//         }
+
+//         // статуетка и цифра один
+//         &--item-stat:before {
+//           display: block;
+//           content: "";
+//           width: 38px;
+//           height: 72px;
+//           background-image: url('../img/sec10-480-01.png');
+//           position: absolute;
+//           top: -15px;
+//           right: 95px;
+//         }
+
+//         @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//           &--title:before {
+//           background-image: url('../img/sec10-480-01@2x.png');
+//           background-size: cover;
+//         }
+//         }
+
+//         &--item-stat:after {
+//           display: block;
+//           content: "";
+//           width: 41px;
+//           height: 136px;
+//           background-image: url('../img/sec10-480-stat.png');
+//           position: absolute;
+//           top: 0;
+//           right: 0;
+//         }
+
+//         @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//           &--title:after {
+//           background-image: url('../img/sec10-480-stat@2x.png');
+//           background-size: cover;
+//         }
+//         }
+
+//         // коробка 2
+//         &--item-box2:before {
+//           display: block;
+//           content: "";
+//           width: 37px;
+//           height: 75px;
+//           background-image: url('../img/sec10-480-02.png');
+//           position: absolute;
+//           top: -15px;
+//           right: 95px;
+//         }
+
+//         @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//           &--item-box2:before {
+//           background-image: url('../img/sec10-480-02@2x.png');
+//           background-size: cover;
+//         }
+//         }
+
+//         &--item-box2:after {
+//           display: block;
+//           content: "";
+//           width: 54px;
+//           height: 109px;
+//           background-image: url('../img/sec10-480-box.png');
+//           position: absolute;
+//           top: 0;
+//           right: 0;
+//         }
+
+//         @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//           &--item-box2:after {
+//           background-image: url('../img/sec10-480-box@2x.png');
+//           background-size: cover;
+//         }
+//         }
+
+//         // коробка 3
+//         &--item-box3:before {
+//           display: block;
+//           content: "";
+//           width: 37px;
+//           height: 74px;
+//           background-image: url('../img/sec10-480-03.png');
+//           position: absolute;
+//           top: -15px;
+//           right: 95px;
+//         }
+
+//         @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//           &--item-box3:before {
+//           background-image: url('../img/sec10-480-03@2x.png');
+//           background-size: cover;
+//         }
+//         }
+
+//         &--item-box3:after {
+//           display: block;
+//           content: "";
+//           width: 54px;
+//           height: 109px;
+//           background-image: url('../img/sec10-480-box.png');
+//           position: absolute;
+//           top: 0;
+//           right: 0;
+//         }
+
+//         @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//           &--item-box3:after {
+//           background-image: url('../img/sec10-480-box@2x.png');
+//           background-size: cover;
+//         }
+//         }
+//       }
+//       // скобка списка с наградами
+//     }
+//     // скобка всего дива награды, вторая часть
+//   }
+//   // скобка всей секции 10, для медиаправил 480px
+// }
+// // скобка всех медиаправил на 480px
+
+// // МЕДИАПРАВИЛА ДЛЯ 768px!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// @media (min-width: 768px) and (max-width:959px) {
+//   .section10 {
+//     // этим шаблоном задаем все контентные ширины на все 6 переломных точек
+//     width: 640px;
+//     margin: 52px auto 54px;
+
+//     // ТУТ РАБОТАЕМ С ПЕРВОЙ ГЛОБАЛЬНОЙ ЧАСТЬЮ - ИНФОРМАЦИЯ
+//     &-info {
+//       flex-direction: row;
+//       flex-wrap: wrap;
+//       margin-bottom: 67px;
+//       position: relative;
+
+//       &__title {
+//         @include text-style ($size: 26px, $weight: 800, $color: rgba(0, 0, 0, 255));
+//         width: 230px;
+//         margin: 0 68px 28px 0;
+
+//         &-about {
+//           @include text-style ($size: 9px, $weight: 500, $color: rgba(0, 0, 0, 255));
+//           width: 154px;
+//           margin: 0;
+//           padding-left: 47px;
+//         }
+//       }
+
+//       &__subtitle {
+//         @include text-style ($size: 11px, $weight: 800, $color: $black);
+//         width: 114px;
+//         margin: 4px 23px 36px 41px;
+//       }
+
+//       &__subtitle-about {
+//         @include text-style ($size: 10px, $weight: 400, $color: $text-color);
+//         width: 146px;
+//         margin: 5px 108px 31px 0;
+//       }
+
+//       &__img {
+//         width: 430px;
+//         margin: 0;
+//         position: absolute;
+//         bottom: 0;
+//         right: 0;
+//       }
+//     }
+//     // скобка первой части инфо
+
+//     // ТЕПЕРЬ РАБОТАЕМ СО ВТОРОЙ ГЛОБАЛЬНОЙ ЧАСТЬЮ СЕКЦИИ - НАГРАДЫ
+//     &-awards {
+//       flex-direction: row;
+//       flex-wrap: wrap;
+//       width: 100%;
+//       position: relative;
+
+//       // первая часть наград - див оон
+//       &__oon {
+//         flex-direction: row;
+//         flex-wrap: wrap;
+//         width: 100%;
+//         margin: 0;
+
+//         &--go {
+//           @include text-style ($size: 9px, $weight: 500, $color: $white);
+//           width: 55px;
+//           margin: 0 113px 28px 0;
+//         }
+
+//         &--recognized {
+//           @include text-style ($size: 9px, $weight: 500, $color: $white);
+//           width: 160px;
+//           margin: 0 300px 28px 0;
+//           order: 0;
+//         }
+
+//         &--title {
+//           @include text-style ($size: 9px, $weight: 800, $color: $black);
+//           margin: 0 520px 11px 0;
+//           width: 120px;
+//         }
+
+//         &--title:after {
+//           display: block;
+//           content: "";
+//           width: 58px;
+//           height: 50px;
+//           background-image: url('../img/sec10-768-oon.png');
+//           position: absolute;
+//           top: -40px;
+//           right: -20px;
+//         }
+
+//         @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//           &--title:after {
+//           background-image: url('../img/sec10-768-oon@2x.png');
+//           background-size: cover;
+//         }
+//         }
+
+//         &--subtitle {
+//           @include text-style ($size: 9px, $weight: 400, $color: $text-color);
+//           width: 140px;
+//           margin-right: 400px;
+//           margin-bottom: 0;
+//         }
+//       }
+
+//       // работаем со списком наград, во второй часте - награды
+//       &__list {
+//         width: 477px;
+//         margin: 0;
+//         flex-direction: row;
+//         position: absolute;
+//         right: 0;
+//         bottom: 0;
+
+//         &--item {
+//           position: relative;
+//           width: 140px;
+//           margin: 0;
+//         }
+
+//         &--item:nth-child(-n+2) {
+//           margin-right: 16px;
+//         }
+
+//         &--item:nth-child(-n+2) {
+//           margin-bottom: 0;
+//         }
+
+//         &--item-title {
+//           @include text-style ($size: 9px, $weight: 800, $color: $black);
+//           margin-bottom: 11px;
+//           width: 56px;
+//         }
+
+//         &--item-about {
+//           @include text-style ($size: 8px, $weight: 400, $color: $text-color);
+//           width: 85px;
+//         }
+
+//         // теперь особенности каждой li
+//         &--item-about-stat {
+//           width: 85px;
+//         }
+
+//         // статуетка и цифра один
+//         &--item-stat:before {
+//           display: block;
+//           content: "";
+//           width: 29px;
+//           height: 56px;
+//           background-image: url('../img/sec10-768-01.png');
+//           position: absolute;
+//           top: -20px;
+//           right: -15px;
+//         }
+
+//         @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//           &--title:before {
+//           background-image: url('../img/sec10-768-01@2x.png');
+//           background-size: cover;
+//         }
+//         }
+
+//         &--item-stat:after {
+//           display: block;
+//           content: "";
+//           width: 29px;
+//           height: 98px;
+//           background-image: url('../img/sec10-768-stat.png');
+//           position: absolute;
+//           top: 0;
+//           right: 0;
+//         }
+
+//         @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//           &--title:after {
+//           background-image: url('../img/sec10-768-stat@2x.png');
+//           background-size: cover;
+//         }
+//         }
+
+//         // коробка 2
+//         &--item-box2:before {
+//           display: block;
+//           content: "";
+//           width: 29px;
+//           height: 58px;
+//           background-image: url('../img/sec10-768-02.png');
+//           position: absolute;
+//           top: -20px;
+//           right: -15px;
+//         }
+
+//         @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//           &--item-box2:before {
+//           background-image: url('../img/sec10-768-02@2x.png');
+//           background-size: cover;
+//         }
+//         }
+
+//         &--item-box2:after {
+//           display: block;
+//           content: "";
+//           width: 40px;
+//           height: 79px;
+//           background-image: url('../img/sec10-768-box.png');
+//           position: absolute;
+//           top: 0;
+//           right: 0;
+//         }
+
+//         @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//           &--item-box2:after {
+//           background-image: url('../img/sec10-480-box@2x.png');
+//           background-size: cover;
+//         }
+//         }
+
+//         // коробка 3
+//         &--item-box3:before {
+//           display: block;
+//           content: "";
+//           width: 29px;
+//           height: 58px;
+//           background-image: url('../img/sec10-768-03.png');
+//           position: absolute;
+//           top: -20px;
+//           right: -15px;
+//         }
+
+//         @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//           &--item-box3:before {
+//           background-image: url('../img/sec10-768-03@2x.png');
+//           background-size: cover;
+//         }
+//         }
+
+//         &--item-box3:after {
+//           display: block;
+//           content: "";
+//           width: 40px;
+//           height: 79px;
+//           background-image: url('../img/sec10-768-box.png');
+//           position: absolute;
+//           top: 0;
+//           right: 0;
+//         }
+
+//         @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//           &--item-box3:after {
+//           background-image: url('../img/sec10-768-box@2x.png');
+//           background-size: cover;
+//         }
+//         }
+//       }
+//       // скобка списка с наградами
+//     }
+//     // скобка всего дива награды, вторая часть
+//   }
+//   // скобка всей секции 10, для медиаправил 768px
+// }
+// // скобка всех медиаправил на 768px
+
+// // МЕДИАПРАВИЛА ДЛЯ 960px!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// @media (min-width: 960px) and (max-width:1199px) {
+//   .section10 {
+//     width: 800px;
+//     margin: 52px auto 54px;
+
+//     // ТУТ РАБОТАЕМ С ПЕРВОЙ ГЛОБАЛЬНОЙ ЧАСТЬЮ - ИНФОРМАЦИЯ
+//     &-info {
+//       flex-direction: row;
+//       flex-wrap: wrap;
+//       margin-bottom: 82px;
+//       position: relative;
+
+//       &__title {
+//         @include text-style ($size: 33px, $weight: 800, $color: rgba(0, 0, 0, 255));
+//         width: 284px;
+//         margin: 0 85px 36px 0;
+
+//         &-about {
+//           @include text-style ($size: 11px, $weight: 500, $color: rgba(0, 0, 0, 255));
+//           width: 192px;
+//           margin: 0;
+//           padding-left: 59px;
+//         }
+//       }
+
+//       &__subtitle {
+//         @include text-style ($size: 11px, $weight: 800, $color: $black);
+//         width: 114px;
+//         margin: 4px 19px 29px 33px;
+//       }
+
+//       &__subtitle-about {
+//         @include text-style ($size: 8px, $weight: 400, $color: $text-color);
+//         width: 117px;
+//         margin: 5px 82px 24px 0;
+//       }
+
+//       &__img {
+//         width: 344px;
+//         margin: 0;
+//         position: absolute;
+//         bottom: 0;
+//         right: 0;
+//       }
+//     }
+//     // скобка первой части инфо
+
+//     // ТЕПЕРЬ РАБОТАЕМ СО ВТОРОЙ ГЛОБАЛЬНОЙ ЧАСТЬЮ СЕКЦИИ - НАГРАДЫ
+//     &-awards {
+//       flex-direction: row;
+//       flex-wrap: wrap;
+//       width: 100%;
+//       position: relative;
+
+//       // первая часть наград - див оон
+//       &__oon {
+//         flex-direction: row;
+//         flex-wrap: wrap;
+//         width: 100%;
+//         margin: 0;
+
+//         &--go {
+//           @include text-style ($size: 9px, $weight: 500, $color: $white);
+//           width: 55px;
+//           margin: 0 113px 28px 0;
+//         }
+
+//         &--recognized {
+//           @include text-style ($size: 9px, $weight: 500, $color: $white);
+//           width: 160px;
+//           margin: 0 300px 28px 0;
+//           order: 0;
+//         }
+
+//         &--title {
+//           @include text-style ($size: 9px, $weight: 800, $color: $black);
+//           margin: 0 520px 11px 0;
+//           width: 120px;
+//         }
+
+//         &--title:after {
+//           display: block;
+//           content: "";
+//           width: 58px;
+//           height: 50px;
+//           background-image: url('../img/sec10-768-oon.png');
+//           position: absolute;
+//           top: -40px;
+//           right: -20px;
+//         }
+
+//         @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//           &--title:after {
+//           background-image: url('../img/sec10-768-oon@2x.png');
+//           background-size: cover;
+//         }
+//         }
+
+//         &--subtitle {
+//           @include text-style ($size: 9px, $weight: 400, $color: $text-color);
+//           width: 140px;
+//           margin-right: 400px;
+//           margin-bottom: 0;
+//         }
+//       }
+
+//       // работаем со списком наград, во второй часте - награды
+//       &__list {
+//         width: 477px;
+//         margin: 0;
+//         flex-direction: row;
+//         position: absolute;
+//         right: 0;
+//         bottom: 0;
+
+//         &--item {
+//           position: relative;
+//           width: 140px;
+//           margin: 0;
+//         }
+
+//         &--item:nth-child(-n+2) {
+//           margin-right: 16px;
+//         }
+
+//         &--item:nth-child(-n+2) {
+//           margin-bottom: 0;
+//         }
+
+//         &--item-title {
+//           @include text-style ($size: 9px, $weight: 800, $color: $black);
+//           margin-bottom: 11px;
+//           width: 56px;
+//         }
+
+//         &--item-about {
+//           @include text-style ($size: 8px, $weight: 400, $color: $text-color);
+//           width: 85px;
+//         }
+
+//         // теперь особенности каждой li
+//         &--item-about-stat {
+//           width: 85px;
+//         }
+
+//         // статуетка и цифра один
+//         &--item-stat:before {
+//           display: block;
+//           content: "";
+//           width: 29px;
+//           height: 56px;
+//           background-image: url('../img/sec10-768-01.png');
+//           position: absolute;
+//           top: -20px;
+//           right: -15px;
+//         }
+
+//         @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//           &--title:before {
+//           background-image: url('../img/sec10-768-01@2x.png');
+//           background-size: cover;
+//         }
+//         }
+
+//         &--item-stat:after {
+//           display: block;
+//           content: "";
+//           width: 29px;
+//           height: 98px;
+//           background-image: url('../img/sec10-768-stat.png');
+//           position: absolute;
+//           top: 0;
+//           right: 0;
+//         }
+
+//         @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//           &--title:after {
+//           background-image: url('../img/sec10-768-stat@2x.png');
+//           background-size: cover;
+//         }
+//         }
+
+//         // коробка 2
+//         &--item-box2:before {
+//           display: block;
+//           content: "";
+//           width: 29px;
+//           height: 58px;
+//           background-image: url('../img/sec10-768-02.png');
+//           position: absolute;
+//           top: -20px;
+//           right: -15px;
+//         }
+
+//         @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//           &--item-box2:before {
+//           background-image: url('../img/sec10-768-02@2x.png');
+//           background-size: cover;
+//         }
+//         }
+
+//         &--item-box2:after {
+//           display: block;
+//           content: "";
+//           width: 40px;
+//           height: 79px;
+//           background-image: url('../img/sec10-768-box.png');
+//           position: absolute;
+//           top: 0;
+//           right: 0;
+//         }
+
+//         @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//           &--item-box2:after {
+//           background-image: url('../img/sec10-480-box@2x.png');
+//           background-size: cover;
+//         }
+//         }
+
+//         // коробка 3
+//         &--item-box3:before {
+//           display: block;
+//           content: "";
+//           width: 29px;
+//           height: 58px;
+//           background-image: url('../img/sec10-768-03.png');
+//           position: absolute;
+//           top: -20px;
+//           right: -15px;
+//         }
+
+//         @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//           &--item-box3:before {
+//           background-image: url('../img/sec10-768-03@2x.png');
+//           background-size: cover;
+//         }
+//         }
+
+//         &--item-box3:after {
+//           display: block;
+//           content: "";
+//           width: 40px;
+//           height: 79px;
+//           background-image: url('../img/sec10-768-box.png');
+//           position: absolute;
+//           top: 0;
+//           right: 0;
+//         }
+
+//         @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//           &--item-box3:after {
+//           background-image: url('../img/sec10-768-box@2x.png');
+//           background-size: cover;
+//         }
+//         }
+//       }
+//       // скобка списка с наградами
+//     }
+//     // скобка всего дива награды, вторая часть
+//   }
+//   // скобка всей секции 10, для медиаправил 960px
+// }
+// // скобка всех медиаправил на 960px
