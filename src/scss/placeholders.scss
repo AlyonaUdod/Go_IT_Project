@@ -81,7 +81,7 @@
       }
     }
 
-  %s9-orange-mark {
+    %s9-orange-mark {
       counter-increment: s9-item-number 1;
       content: "[\a0 00" counter(s9-item-number) " \a0]";
       background: $orange;
