@@ -78,6 +78,8 @@
     @media (min-width: 1440px) {
         width: 38px;
         height: 6px;
+      }
+    }
 
   %s9-orange-mark {
       counter-increment: s9-item-number 1;
@@ -98,6 +100,3 @@
       background: $black;
       transform:  translate(-160%, 600%) rotate(-55deg);
   }
-    }
-}
-
