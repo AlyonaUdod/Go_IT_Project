@@ -61,14 +61,18 @@ a {
   padding: 0 10px;
 }
 
-.section03__span--01,
-.section03__span--02 {
+.section03__span-01,
+.section03__span-02 {
   display: block;
   background-color: black;
 }
 
 .section03__img {
   margin: auto;
+}
+
+.section03__logo {
+  width: 100%;
 }
 
 .section03__pretitle {
@@ -80,16 +84,29 @@ a {
   text-transform: uppercase;
   display: block;
   width: 169px;
-  margin: auto;
+  margin: 24px auto 0px;
 }
 
-.section03__span--01 {
+.section03__span-01 {
   width: 87px;
   margin-bottom: 5px;
 }
 
-.section03__span--02 {
+.section03__span-02 {
   width: 169px;
+}
+
+.section03__span-03 {
+  background: #2ed3e4;
+}
+
+.section03__span-04 {
+  width: 171px;
+  background: black;
+}
+
+.section03__span-05 {
+  background: black;
 }
 
 .section03__par {
@@ -111,13 +128,13 @@ a {
   font-size: 11px;
   display: block;
   color: white;
-  background-color: black;
   margin: 35px auto 13px;
   text-transform: uppercase;
-  width: 161px;
+  width: 166px;
+  background-color: black;
 }
 
-.section03__title--par {
+.section03__title-par {
   font-family: 'Acrom';
   font-weight: 700;
   display: block;
@@ -126,19 +143,19 @@ a {
   font-size: 9px;
 }
 
-.section03__title--par__conteiner {
+.section03__par-conteiner {
   width: 206px;
   display: flex;
   justify-content: center;
   margin: auto auto 31px;
 }
 
-.section03__before--conteiner {
+.section03__before {
   width: 34px;
   position: relative;
 }
 
-.section03__before--conteiner::before {
+.section03__before::before {
   display: block;
   content: "";
   width: 14px;
@@ -151,20 +168,25 @@ a {
 
 .section03__list {
   list-style: square;
+  padding-left: 20px;
 }
 
-.section03__list--item {
+.section03__list-item {
   margin-bottom: 20px;
 }
 
-.section03__list--item__title {
+.section03__list-item:last-child {
+  margin-bottom: 0;
+}
+
+.section03__list-item-title {
   font-family: 'Acrom';
   font-weight: 900;
   font-size: 9px;
   text-transform: uppercase;
 }
 
-.section03__list--item__par {
+.section03__list-item-par {
   font-family: 'Acrom';
   font-weight: 400;
   font-size: 9px;
@@ -186,6 +208,62 @@ a {
   .section03 {
     width: 640px;
     padding: 0;
+  }
+
+  .section03 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .section03__flex-conteiner {
+    width: 43%;
+  }
+
+  .section03__flex-conteiner-01 {
+    width: 35%;
+  }
+
+  .section03__span-05 {
+    display: block;
+    margin-top: 4px;
+  }
+
+  .section03--span-04 {
+    display: block;
+  }
+
+  .section03__logo {
+    width: 276px;
+    margin-top: 35px;
+  }
+
+  .section03__title {
+    font-size: 27px;
+    width: 225px;
+    background-color: white;
+  }
+
+  .section03__list {
+    padding-left: 21px;
+  }
+
+  .section03__before::before {
+    width: 29px;
+    height: 4px;
+    left: -8px;
+  }
+
+  .section03__flex-text {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .section03__flex-conteiner-02 {
+    width: 30%;
+  }
+
+  .section03__flex-conteiner-03 {
+    width: 70%;
   }
 }
 
