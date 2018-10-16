@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+a,
+button {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: Acrom;
+  src: url("../fonts/Acrom/Acrom-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Acrom;
+  src: url("../fonts/Acrom/Acrom-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Acrom;
+  src: url("../fonts/Acrom/Acrom-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Acrom;
+  src: url("../fonts/Acrom/Acrom-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Acrom;
+  src: url("../fonts/Acrom/Acrom-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Acrom;
+  src: url("../fonts/Acrom/Acrom-ExtraBold.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+.section03 {
+  margin: auto;
+  width: 300px;
+  padding: 0 10px;
+}
+
+.section03__span--01,
+.section03__span--02 {
+  display: block;
+  background-color: black;
+}
+
+.section03__img {
+  margin: auto;
+}
+
+.section03__pretitle {
+  font-family: 'Acrom';
+  font-weight: 900;
+  font-size: 12px;
+  color: white;
+  line-height: 11px;
+  text-transform: uppercase;
+  display: block;
+  width: 169px;
+  margin: auto;
+}
+
+.section03__span--01 {
+  width: 87px;
+  margin-bottom: 5px;
+}
+
+.section03__span--02 {
+  width: 169px;
+}
+
+.section03__par {
+  font-family: 'Acrom';
+  font-weight: 700;
+  font-size: 9px;
+  margin: 20px auto 8px;
+}
+
+.section03__text {
+  font-family: 'Acrom';
+  font-weight: 400;
+  font-size: 9px;
+}
+
+.section03__title {
+  font-family: 'Acrom';
+  font-weight: 900;
+  font-size: 11px;
+  display: block;
+  color: white;
+  background-color: black;
+  margin: 35px auto 13px;
+  text-transform: uppercase;
+  width: 161px;
+}
+
+.section03__title--par {
+  font-family: 'Acrom';
+  font-weight: 700;
+  display: block;
+  width: 176px;
+  margin: auto;
+  font-size: 9px;
+}
+
+.section03__title--par__conteiner {
+  width: 206px;
+  display: flex;
+  justify-content: center;
+  margin: auto auto 31px;
+}
+
+.section03__before--conteiner {
+  width: 34px;
+  position: relative;
+}
+
+.section03__before--conteiner::before {
+  display: block;
+  content: "";
+  width: 14px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  top: 5px;
+  left: 18px;
+}
+
+.section03__list {
+  list-style: square;
+}
+
+.section03__list--item {
+  margin-bottom: 20px;
+}
+
+.section03__list--item__title {
+  font-family: 'Acrom';
+  font-weight: 900;
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+.section03__list--item__par {
+  font-family: 'Acrom';
+  font-weight: 400;
+  font-size: 9px;
+}
+
+@media (min-width: 1440px) {
+  .section03 {
+    width: 860px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .section03 {
+    width: 450px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+  .section03 {
+    width: 640px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1199px) {
+  .section03 {
+    width: 800px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .section03 {
+    width: 715px;
+  }
+}
