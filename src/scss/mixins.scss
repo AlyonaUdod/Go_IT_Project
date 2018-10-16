@@ -3,47 +3,48 @@
     font-weight: $weight;
     color: $color;
     font-family: 'Acrom', sans-serif;
-
 }
 
-// ***************section-09-mixins-start***************
+@mixin display-options ($justify: space-between, $display: flex, $flow: row wrap) {
+    justify-content: $justify;
+    display: $display;
+    flex-flow: $flow;
+}
 
 @mixin s9-top-block-view ($screenResolution, $titleFontSize, $subtFontSize, $leftPadding:15%) {
-  @media (min-width:$screenResolution) {
-    &__title {
-      font-size: $titleFontSize;
-    }
-
-    &__subtitle {
-      font-size: $subtFontSize;
-      padding-left: $leftPadding;
+    @media (min-width:$screenResolution) {
+      &__title {
+        font-size: $titleFontSize;
+      }
+  
+      &__subtitle {
+        font-size: $subtFontSize;
+        padding-left: $leftPadding;
+      }
     }
   }
-}
-
-@mixin s9-middle-block-view ($screenResolution, $topMargin, $descrFontSize, $xShift, $pElemenSize) {
-  @media (min-width:$screenResolution) {
-    &__middle-wrapper {
-      margin-top: $topMargin;
-    }
-    &__description {
-      font-size: $descrFontSize;
-    }
-
-    &__list-item {
-      &-title {
+  
+  @mixin s9-middle-block-view ($screenResolution, $topMargin, $descrFontSize, $xShift, $pElemenSize) {
+    @media (min-width:$screenResolution) {
+      &__middle-wrapper {
+        margin-top: $topMargin;
+      }
+      &__description {
         font-size: $descrFontSize;
       }
-      &-description {
-        margin-top:10px;
-        font-size: $descrFontSize - 1;
-      }
-      &:before {
-        font-size: $pElemenSize;
-        transform: rotate(270deg) translate(-40%, $xShift);
+  
+      &__list-item {
+        &-title {
+          font-size: $descrFontSize;
+        }
+        &-description {
+          margin-top:10px;
+          font-size: $descrFontSize - 1;
+        }
+        &:before {
+          font-size: $pElemenSize;
+          transform: rotate(270deg) translate(-40%, $xShift);
+        }
       }
     }
   }
-}
-
-// ***************section-09-mixins-end***************
