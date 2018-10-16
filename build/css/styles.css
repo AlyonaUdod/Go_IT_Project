@@ -775,8 +775,8 @@ li {
 
   .section09__list-item:before {
     font-size: 7.5px;
-    -webkit-transform: rotate(270deg) translate(-40%, -540%);
-    transform: rotate(270deg) translate(-40%, -540%);
+    -webkit-transform: rotate(270deg) translate(-40%, -570%);
+    transform: rotate(270deg) translate(-40%, -570%);
   }
 
   .section09__btn-description {
