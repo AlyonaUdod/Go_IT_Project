@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+a,
+button {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+@font-face {
+  font-family: Acrom;
+  src: url("../fonts/Acrom/Acrom-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Acrom;
+  src: url("../fonts/Acrom/Acrom-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Acrom;
+  src: url("../fonts/Acrom/Acrom-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Acrom;
+  src: url("../fonts/Acrom/Acrom-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Acrom;
+  src: url("../fonts/Acrom/Acrom-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Acrom;
+  src: url("../fonts/Acrom/Acrom-ExtraBold.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+.section17 {
+  margin: auto;
+  width: 300px;
+  padding: 0 10px;
+}
+
+.section17 {
+  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 45px;
+}
+
+.section17__title {
+  width: 72px;
+  margin: 0 auto 15px;
+  font-family: 'Acrom', sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  color: black;
+  text-transform: uppercase;
+}
+
+.section17-wr {
+  width: 250px;
+  margin: 0 auto 27px;
+  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.section17-price {
+  padding: 53px;
+  width: 142px;
+  background-color: #052139;
+  justify-content: space-between;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.section17-price__title {
+  width: 57px;
+  color: white;
+  font-family: 'Acrom', sans-serif;
+  font-size: 8px;
+  font-weight: 500;
+}
+
+.section17-price__default-price {
+  width: 75px;
+  color: white;
+  font-family: 'Acrom', sans-serif;
+  font-size: 8px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: right;
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.section17-price__default-price:before {
+  display: block;
+  content: "";
+  width: 25px;
+  height: 1px;
+  background-color: white;
+}
+
+.section17-price__subtitle {
+  font-family: 'Acrom', sans-serif;
+  font-size: 8px;
+  font-weight: 900;
+  margin-top: 20px;
+  line-height: 1;
+}
+
+.section17-price__subtitle--different {
+  margin-bottom: 2px;
+  background-color: #2ed3e4;
+  display: block;
+  width: 28px;
+}
+
+.section17-price__subtitle--different2 {
+  background-color: #2ed3e4;
+  display: block;
+  width: 41px;
+}
+
+.section17-price__stock {
+  width: 74px;
+  color: white;
+  font-family: 'Acrom', sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  text-align: right;
+}
+
+.section17-price__stock--coins {
+  font-weight: 700;
+  font-size: 8px;
+}
+
+.section17-info {
+  width: 200px;
+  margin: auto;
+}
+
+@media (min-width: 480px) {
+  .section17 {
+    margin-top: 65px;
+  }
+
+  .section17__title {
+    width: 108px;
+    margin: 0 auto 20px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .section17 {
+    margin-top: 100px;
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .section17__title {
+    margin-bottom: 35px;
+    font-size: 27px;
+  }
+}
+
+@media (min-width: 960px) {
+  .section17 {
+    margin-top: 120px;
+  }
+
+  .section17__title {
+    margin-bottom: 30px;
+    font-size: 34px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section17 {
+    margin-top: 125px;
+  }
+
+  .section17__title {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section17 {
+    width: 860px;
+    padding: 0;
+  }
+
+  .section17 {
+    margin-top: 150px;
+  }
+
+  .section17__title {
+    margin-bottom: 30px;
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .section17 {
+    width: 450px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+  .section17 {
+    width: 640px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1199px) {
+  .section17 {
+    width: 800px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .section17 {
+    width: 715px;
+    padding: 0;
+  }
+}

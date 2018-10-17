@@ -1,0 +1,148 @@
+.section17 {
+    @extend %section-rules;
+    @include display-options (center);
+    margin-top: 45px;
+
+        @media (min-width: 480px) {
+            margin-top: 65px;
+        }
+        @media (min-width: 768px) {
+            margin-top: 100px;
+            @include display-options (center);
+        }
+        @media (min-width: 960px) {
+            margin-top: 120px;
+        }
+        @media (min-width: 1200px) {
+            margin-top: 125px;
+        }
+        @media (min-width: 1440px) {
+            margin-top: 150px;
+        } 
+
+    &__title {
+        width: 72px;
+        margin: 0 auto 15px;     
+        font-family:'Acrom', sans-serif;
+        font-size: 12px;
+        font-weight: 900;
+        color: $black;
+        text-transform: uppercase;
+        
+        @media (min-width: 480px) {
+            width: 108px; 
+            margin: 0 auto 20px;  
+            font-size: 18px;
+        }
+
+        @media (min-width: 768px) {                
+            margin-bottom: 35px;  
+            font-size: 27px; 
+        }
+
+        @media (min-width: 960px) {          
+            margin-bottom: 30px;
+            font-size: 34px; 
+        }
+
+        @media (min-width: 1200px) {                 
+            margin-bottom: 20px;
+            font-size: 30px; 
+        }
+
+        @media (min-width: 1440px) {                 
+            margin-bottom: 30px;
+            font-size: 36px; 
+        }      
+    }
+
+    &-wr {
+        width: 250px;
+        margin: 0 auto 27px;
+        @include display-options (center);   
+    }
+    &-price {
+        padding: 53px;
+        width: 142px;
+        background-color: $s17-blue-bg;
+        @include display-options ();
+        align-items: center;
+
+        &__title {
+            width: 57px;
+            color: $white;
+            font-family:'Acrom', sans-serif;
+            font-size: 8px;
+            font-weight: 500;
+            
+        } 
+        
+
+        &__default-price {
+            width: 75px;
+            color: $white;
+            font-family:'Acrom', sans-serif;
+            font-size: 8px;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-align: right;
+            position: relative;
+            @include display-options ();
+            align-items: center;
+
+
+                &:before {
+                    display: block;
+                    content: "";
+                    width: 25px;
+                    height: 1px;
+                    background-color: $white;
+
+                }
+        }
+
+        &__subtitle {
+            font-family:'Acrom', sans-serif;
+            font-size: 8px;
+            font-weight: 900;
+            margin-top: 20px;
+            line-height: 1;
+
+                &--different {
+                    margin-bottom: 2px;
+                    background-color: $mint;
+                    display: block;
+                    width: 28px;
+                }
+
+                &--different2 {
+                    background-color: $mint;
+                    display: block;
+                    width: 41px;
+                }   
+        }
+
+        &__stock {
+            width: 74px;
+            color: $white;
+            font-family:'Acrom', sans-serif;
+            font-size: 18px;
+            font-weight: 900;
+            text-align: right;
+
+                &--coins {
+                    font-weight: 700;
+                    font-size: 8px;
+                }
+        }
+    }
+
+    &-info {
+        width: 200px;
+        margin: auto;
+
+            &__text {
+                
+            }
+    }
+}
