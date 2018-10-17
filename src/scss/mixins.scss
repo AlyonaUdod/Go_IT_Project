@@ -16,14 +16,14 @@
       &__title {
         font-size: $titleFontSize;
       }
-  
+
       &__subtitle {
         font-size: $subtFontSize;
         padding-left: $leftPadding;
       }
     }
   }
-  
+
   @mixin s9-middle-block-view ($screenResolution, $topMargin, $descrFontSize, $xShift, $pElemenSize) {
     @media (min-width:$screenResolution) {
       &__middle-wrapper {
@@ -32,7 +32,7 @@
       &__description {
         font-size: $descrFontSize;
       }
-  
+
       &__list-item {
         &-title {
           font-size: $descrFontSize;
@@ -48,3 +48,14 @@
       }
     }
   }
+
+@mixin sec10-after-before ($width:25px, $height: 49px, $back-img: url('../img/sec10-320-01.png'), $top: 0, $right: 0) {
+width: $width;
+height: $height;
+background-image: $back-img;
+top: $top;
+right: $right;
+display: block;
+content: "";
+position: absolute;
+}
