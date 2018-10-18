@@ -51,7 +51,9 @@
         text-transform: uppercase;  
     } 
     &-info { 
-    
+        width: 260px;
+        margin: 0 auto;
+
         &__text {
            margin: 15px auto;
            list-style-type: square;
@@ -104,6 +106,7 @@
     } 
     &-info {
         padding: 0 34px;
+        width: 375px;
     
         &__text {
            margin: 23px auto;
@@ -171,6 +174,7 @@
     &-info {
         display: flex;
         flex-wrap: wrap; 
+        width: 100%;
         
         &__text {
             margin: 20px 25px 0 0;
@@ -244,6 +248,7 @@
     &-info {
         display: flex;
         flex-wrap: wrap;  
+        width: 100%;
             
         &__text {
             margin: 22px 25px 0 0;
@@ -291,14 +296,14 @@
         &__text {
             order: 1;
             width: 224px;
-            margin: 0 0 43px 60px;
+            margin: 0 0 43px 68px;
             @include text-style(10px, 500, $black);  
         }
         &__subtitle {  
             order: 2;
             width: 140px;
             @include text-style(11px, 800, $black);
-            margin: 0 0 23px 60px;
+            margin: 0 0 23px 68px;
             padding-left: 50px;
         }
         &__subtitle:before {
@@ -308,7 +313,7 @@
             order: 3;
             width: 245px;
             font-size: 30px;
-            margin: 0 0 0 60px;
+            margin: 0 0 0 68px;
             line-height: 1.3;
         } 
     } 
