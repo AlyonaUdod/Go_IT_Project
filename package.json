@@ -21,10 +21,10 @@
   },
   "homepage": "https://github.com/axZerk/gulp-starter-kit#readme",
   "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
-    "autoprefixer": "^9.1.5",
-    "browser-sync": "^2.26.0",
+    "autoprefixer": "^8.4.1",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.26.1",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^8.0.0",
@@ -43,5 +43,6 @@
     "gulp-uglify": "^3.0.1",
     "run-sequence": "^2.2.1",
     "stylelint": "^9.6.0"
-  }
+  },
+  "dependencies": {}
 }
