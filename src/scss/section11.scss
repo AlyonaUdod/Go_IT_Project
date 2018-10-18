@@ -62,30 +62,31 @@
 &__title{
     width: 175px;
     @include text-style ($size: 12px, $weight: 900,$color: $black);
-    margin: 0 auto 18px -18px;
+    margin: 0 auto 18px -21px;
+    text-transform: uppercase;
 
     @media (min-width: 480px){
         @include text-style ($size: 23px, $weight: 900,$color: $black);
-        width: 268px;
-        margin: 0 auto 28px -15px;
+        width: 305px;
+        margin: 0 auto 28px;
     }
     @media (min-width: 768px){
-        width: 201px;
+        width: 210px;
         @include text-style ($size: 27px, $weight: 900,$color: $black);
         margin: 0 auto 19px 20px  ;
     }
     @media (min-width: 960px){
-        width: 250px;
+        width: 260px;
         @include text-style ($size: 34px, $weight: 900,$color: $black);
         margin: 0 auto 24px 20px  ;
     }
     @media (min-width: 1200px){
-        width: 223px;
+        width: 230px;
         @include text-style ($size: 30px, $weight: 900,$color: $black);
         // margin: 0 auto 22px;
     }
     @media (min-width: 1440px){
-        width: 267px;
+        width: 275px;
         @include text-style ($size: 36px, $weight: 900,$color: $black);
         // margin: 0 auto 22px;
     }
@@ -94,35 +95,42 @@
 &__subtitle{
     width: 157px;
     @include text-style ($size: 9px, $weight: 700,$color: $black);
-    margin: 0 auto 28px 3px;
+    margin: 0 auto 28px;
     position: relative;
+    line-height: 15px;
 &--span{
     background-color: $mint;
+    // line-height: 1.5px;
     }
     @media (min-width: 480px){
         width: 230px;
         @include text-style ($size: 13px, $weight: 700,$color: $black);
-        margin: 0 auto 42px;
+        margin: 0 auto 42px 31px;
+        line-height: 19px;
     }
     @media (min-width: 768px){
         width: 188px;
         @include text-style ($size: 9px, $weight: 700,$color: $black);
         margin: 0 auto 37px;
+        line-height: 14px;
     }
     @media (min-width: 960px){
         width: 234px;
         @include text-style ($size: 11px, $weight: 700,$color: $black);
         margin: 0 auto 47px;
+        line-height: 16px;
     }
     @media (min-width: 1200px){
         width: 209px;
         @include text-style ($size: 10px, $weight: 700,$color: $black);
         margin: 0 auto 25px;
+        line-height: 15px;
     }
     @media (min-width: 1440px){
         width: 255px;
         @include text-style ($size: 12px, $weight: 700,$color: $black);
         margin: 0 auto 30px;
+        line-height: 17px;
     }
 }
 }
@@ -172,6 +180,7 @@
         // width: 50%;
         @include text-style ($size: 11px, $weight: 800,$color: $black);
         margin: 0 auto 14px;
+        padding: 0 0 0 7px;
         &:last-child{
             margin-top: 30px; 
         }
@@ -182,8 +191,10 @@
         @include text-style ($size: 10px, $weight: 800,$color: $black);
         margin: 0 auto 11px;
         padding: 0;
+        padding: 0 0 0 10px;
         &:last-child{
             margin-top: 26px; 
+           
         }
     }
     @media (min-width: 1440px){
@@ -191,7 +202,7 @@
         // width: 50%;
         @include text-style ($size: 10px, $weight: 800,$color: $black);
         margin: 0 auto 15px;
-        padding: 0;
+        padding: 0 0 0 20px;
         &:last-child{
             margin-top: 31px; 
         }
@@ -220,6 +231,7 @@
     width: 155px;
     @include text-style ($size: 9px, $weight: 500,$color: $text-color);
     margin: 6px 0 20px 0;
+    text-transform: none;
 
     @media (min-width: 480px){
         width: 232px;
@@ -254,6 +266,7 @@
 }
 }
 .section11-menu__item::before{
+
     display: block;
     content: "";
     width: 5px;
@@ -266,7 +279,14 @@
     @media (min-width: 480px){
         width: 7px;
         height: 7px;
-        top: 5px;
+        top: 3px;
+        left: -20px;
+        &:nth-child(3){
+            top: 5px;
+        }
+    }
+    .section11-menu__item:nth-child(3):before{
+        top: 25px;
     }
     @media (min-width: 768px){
         width: 7px;
@@ -279,6 +299,7 @@
         left: -20px;
         // bottom: 2px;
     }
+    
     @media (min-width: 1440px){
         width: 10px;
         height: 10px;
@@ -288,27 +309,31 @@
 .section11-info__subtitle::before{
 @extend %black-line;
 left: -21px;
-bottom: 47px;
+bottom: 66px;
 @media (min-width: 480px){
-    left: -26px;
-    bottom: 65px;
+    left: -31px;
+    bottom: 83px;
 }
 @media (min-width: 768px){
     left: -38px;
-    bottom: 35px;
+    bottom: 46px;
 }
 @media (min-width: 960px){
     left: -54px;
-    bottom: 42px;
+    bottom: 54px;
 }
 @media (min-width: 1200px){
     left: -50px;
-    
+    bottom: 50px;
 }
 @media (min-width: 1440px){
     left: -60px;
-    bottom: 46px;
+    bottom: 57px;
 }
 }
 
 
+// .section-menu__item--befor::before{
+//     top: 25px;
+
+// }
