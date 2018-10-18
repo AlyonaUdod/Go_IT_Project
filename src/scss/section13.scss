@@ -32,6 +32,7 @@
   @media (-webkit-min-device-pixel-ratio: 2) {
     &__photo {
       background: url(../img/sec13_fon_320px@2X.png) no-repeat;
+      background-position: 100% 0;
     }
   }
   &__pretitle {
@@ -82,10 +83,12 @@
     @media (-webkit-min-device-pixel-ratio: 2) {
       &__photo {
         background: url(../img/sec13_fon_480px@2X.png) no-repeat;
+        background-position: 100% 0;
       }
     }
     &__pretitle {
       font-size: 13px;
+      margin-bottom: 20px;
     }
     &__title {
       font-size: 18px;
@@ -95,7 +98,7 @@
     &__subtitle {
       font-size: 13px;
       width: 58%;
-      margin-left: 20%;
+      margin-left: 23.5%;
       
       &::before {
         top: 26px;
@@ -117,6 +120,7 @@
     @media (-webkit-min-device-pixel-ratio: 2) {
       &__photo {
         background: url(../img/sec13_fon_768px@2X.png) no-repeat;
+        background-position: 100% 0;
       }
     }
     &__inner-top-title {
@@ -155,6 +159,7 @@
     @media (-webkit-min-device-pixel-ratio: 2) {
       &__photo {
         background: url(../img/sec13_fon_960px@2X.png) no-repeat;
+        background-position: 100% 0;
       }
     }
     &__inner-top-title {
@@ -182,6 +187,7 @@
     @media (-webkit-min-device-pixel-ratio: 2) {
       &__photo {
         background: url(../img/sec13_fon_1200px@2X.png) no-repeat;
+        background-position: 100% 0;
       }
     }
     &__pretitle, &__subtitle {
@@ -203,6 +209,7 @@
     @media (-webkit-min-device-pixel-ratio: 2) {
       &__photo {
         background: url(../img/sec13_fon_1440px@2X.png) no-repeat;
+        background-position: 100% 0;
       }
     }
     &__pretitle, &__subtitle {

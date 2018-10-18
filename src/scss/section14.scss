@@ -23,7 +23,7 @@
     &__title {
       @extend %section-title-white_bg;
       width: 43%;
-      margin: 40px auto 10px;
+      margin: 40px 23% 10px;
       font-size: 12px;
       font-weight: 800;
     }
@@ -89,6 +89,7 @@
       &__title {
         font-size: 18px;
         width: 50%;
+        margin-left: 25%;
       }
       &__list-item {
         width: 64%;
@@ -126,6 +127,7 @@
       font-size: 27px;
       width: 100%;
       margin-top: 29px;
+      margin-left: 0;
     }
     &__list {
       display: flex;
