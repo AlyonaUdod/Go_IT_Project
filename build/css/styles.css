@@ -59,12 +59,6 @@ li {
   font-style: normal;
 }
 
-.section12 {
-  margin: auto;
-  width: 300px;
-  padding: 0 10px;
-}
-
 .section11-info__subtitle::before,
 .section12-text__subtitle::before {
   display: block;
@@ -100,7 +94,8 @@ li {
   font-weight: 900;
   color: black;
   font-family: 'Acrom', sans-serif;
-  margin: 0 auto 18px -18px;
+  margin: 0 auto 18px -21px;
+  text-transform: uppercase;
 }
 
 .section11-info__subtitle {
@@ -109,8 +104,9 @@ li {
   font-weight: 700;
   color: black;
   font-family: 'Acrom', sans-serif;
-  margin: 0 auto 28px 3px;
+  margin: 0 auto 28px;
   position: relative;
+  line-height: 15px;
 }
 
 .section11-info__subtitle--span {
@@ -141,6 +137,7 @@ li {
   color: #3f4144;
   font-family: 'Acrom', sans-serif;
   margin: 6px 0 20px 0;
+  text-transform: none;
 }
 
 .section11-menu__item::before {
@@ -151,15 +148,22 @@ li {
   background-color: black;
   position: absolute;
   left: -15px;
-  top: 4px;
+  top: 3px;
+}
+
+.section11-menu__item::before .section11-menu__item:nth-child(3):before {
+  top: 25px;
 }
 
 .section11-info__subtitle::before {
   left: -21px;
-  bottom: 47px;
+  bottom: 64px;
 }
 
 .section12 {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
   margin: 46px auto;
 }
 
@@ -232,8 +236,8 @@ li {
     font-weight: 900;
     color: black;
     font-family: 'Acrom', sans-serif;
-    width: 268px;
-    margin: 0 auto 28px -15px;
+    width: 305px;
+    margin: 0 auto 28px;
   }
 
   .section11-info__subtitle {
@@ -242,7 +246,8 @@ li {
     font-weight: 700;
     color: black;
     font-family: 'Acrom', sans-serif;
-    margin: 0 auto 42px;
+    margin: 0 auto 42px 31px;
+    line-height: 19px;
   }
 
   .section11-menu__item {
@@ -266,16 +271,22 @@ li {
   .section11-menu__item::before {
     width: 7px;
     height: 7px;
-    top: 5px;
+    top: 3px;
+    left: -20px;
   }
 
   .section11-info__subtitle::before {
-    left: -26px;
-    bottom: 65px;
+    left: -31px;
+    bottom: 83px;
   }
 
   .section12 {
+    width: 450px;
     margin-top: 68px;
+  }
+
+  .section12__img {
+    margin: 0 auto;
   }
 
   .section12-text {
@@ -350,7 +361,7 @@ li {
   }
 
   .section11-info__title {
-    width: 201px;
+    width: 210px;
     font-size: 27px;
     font-weight: 900;
     color: black;
@@ -365,6 +376,7 @@ li {
     color: black;
     font-family: 'Acrom', sans-serif;
     margin: 0 auto 37px;
+    line-height: 14px;
   }
 
   .section11-menu {
@@ -406,10 +418,11 @@ li {
 
   .section11-info__subtitle::before {
     left: -38px;
-    bottom: 35px;
+    bottom: 46px;
   }
 
   .section12 {
+    width: 640px;
     flex-wrap: nowrap;
     justify-content: space-between;
     margin-top: 106px;
@@ -478,7 +491,7 @@ li {
   }
 
   .section11-info__title {
-    width: 250px;
+    width: 260px;
     font-size: 34px;
     font-weight: 900;
     color: black;
@@ -493,6 +506,7 @@ li {
     color: black;
     font-family: 'Acrom', sans-serif;
     margin: 0 auto 47px;
+    line-height: 16px;
   }
 
   .section11-menu {
@@ -506,6 +520,7 @@ li {
     color: black;
     font-family: 'Acrom', sans-serif;
     margin: 0 auto 14px;
+    padding: 0 0 0 7px;
   }
 
   .section11-menu__item:last-child {
@@ -534,7 +549,7 @@ li {
 
   .section11-info__subtitle::before {
     left: -54px;
-    bottom: 42px;
+    bottom: 54px;
   }
 
   .section12 {
@@ -605,7 +620,7 @@ li {
   }
 
   .section11-info__title {
-    width: 223px;
+    width: 230px;
     font-size: 30px;
     font-weight: 900;
     color: black;
@@ -619,6 +634,7 @@ li {
     color: black;
     font-family: 'Acrom', sans-serif;
     margin: 0 auto 25px;
+    line-height: 15px;
   }
 
   .section11-menu {
@@ -633,6 +649,7 @@ li {
     font-family: 'Acrom', sans-serif;
     margin: 0 auto 11px;
     padding: 0;
+    padding: 0 0 0 10px;
   }
 
   .section11-menu__item:last-child {
@@ -654,6 +671,7 @@ li {
 
   .section11-info__subtitle::before {
     left: -50px;
+    bottom: 50px;
   }
 
   .section12 {
@@ -714,11 +732,6 @@ li {
 }
 
 @media (min-width: 1440px) {
-  .section12 {
-    width: 860px;
-    padding: 0;
-  }
-
   .section11-info__subtitle::before,
   .section12-text__subtitle::before {
     width: 38px;
@@ -736,7 +749,7 @@ li {
   }
 
   .section11-info__title {
-    width: 267px;
+    width: 275px;
     font-size: 36px;
     font-weight: 900;
     color: black;
@@ -750,6 +763,7 @@ li {
     color: black;
     font-family: 'Acrom', sans-serif;
     margin: 0 auto 30px;
+    line-height: 17px;
   }
 
   .section11-menu {
@@ -763,7 +777,7 @@ li {
     color: black;
     font-family: 'Acrom', sans-serif;
     margin: 0 auto 15px;
-    padding: 0;
+    padding: 0 0 0 20px;
   }
 
   .section11-menu__item:last-child {
@@ -792,7 +806,7 @@ li {
 
   .section11-info__subtitle::before {
     left: -60px;
-    bottom: 46px;
+    bottom: 57px;
   }
 
   .section12 {
@@ -852,10 +866,6 @@ li {
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  .section12 {
-    width: 450px;
-  }
-
   .section11-info__subtitle::before,
   .section12-text__subtitle::before {
     width: 20px;
@@ -864,11 +874,6 @@ li {
 }
 
 @media (min-width: 768px) and (max-width: 959px) {
-  .section12 {
-    width: 640px;
-    padding: 0;
-  }
-
   .section11-info__subtitle::before,
   .section12-text__subtitle::before {
     width: 29px;
@@ -877,11 +882,6 @@ li {
 }
 
 @media (min-width: 960px) and (max-width: 1199px) {
-  .section12 {
-    width: 800px;
-    padding: 0;
-  }
-
   .section11-info__subtitle::before,
   .section12-text__subtitle::before {
     width: 36px;
@@ -890,11 +890,6 @@ li {
 }
 
 @media (min-width: 1200px) and (max-width: 1439px) {
-  .section12 {
-    width: 715px;
-    padding: 0;
-  }
-
   .section11-info__subtitle::before,
   .section12-text__subtitle::before {
     width: 32px;
