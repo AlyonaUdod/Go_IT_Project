@@ -180,7 +180,7 @@ li {
 .section12-text__title {
   width: 144px;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 900;
   color: black;
   font-family: 'Acrom', sans-serif;
   margin-bottom: 14px;
@@ -277,7 +277,7 @@ li {
 
   .section11-info__subtitle::before {
     left: -31px;
-    bottom: 83px;
+    bottom: 80px;
   }
 
   .section12 {
@@ -297,7 +297,7 @@ li {
   .section12-text__title {
     width: 215px;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 900;
     color: black;
     font-family: 'Acrom', sans-serif;
     margin-bottom: 21px;
@@ -337,7 +337,7 @@ li {
 
   .section12-text__subtitle::before {
     left: -27px;
-    bottom: 47px;
+    bottom: 48px;
   }
 }
 
@@ -418,7 +418,7 @@ li {
 
   .section11-info__subtitle::before {
     left: -38px;
-    bottom: 46px;
+    bottom: 44px;
   }
 
   .section12 {
@@ -448,7 +448,7 @@ li {
     font-weight: 500;
     color: black;
     font-family: 'Acrom', sans-serif;
-    margin-left: 41px;
+    margin-left: 48px;
   }
 
   .section12-info {
@@ -474,7 +474,7 @@ li {
   }
 
   .section12-text__subtitle::before {
-    left: -36px;
+    left: -45px;
     bottom: 33px;
   }
 }
@@ -549,7 +549,7 @@ li {
 
   .section11-info__subtitle::before {
     left: -54px;
-    bottom: 54px;
+    bottom: 53px;
   }
 
   .section12 {
@@ -577,7 +577,7 @@ li {
     font-weight: 500;
     color: black;
     font-family: 'Acrom', sans-serif;
-    margin-left: 50px;
+    margin-left: 55px;
   }
 
   .section12-info {
@@ -603,7 +603,7 @@ li {
   }
 
   .section12-text__subtitle::before {
-    left: -45px;
+    left: -53px;
     bottom: 43px;
   }
 }
@@ -671,7 +671,7 @@ li {
 
   .section11-info__subtitle::before {
     left: -50px;
-    bottom: 50px;
+    bottom: 47px;
   }
 
   .section12 {
@@ -695,7 +695,7 @@ li {
   }
 
   .section12-text__subtitle {
-    width: 152px;
+    width: 155px;
     font-size: 10px;
     font-weight: 500;
     color: black;
@@ -709,7 +709,7 @@ li {
   }
 
   .section12-info__headline {
-    width: 142px;
+    width: 110px;
     font-size: 10px;
     font-weight: 900;
     color: black;
@@ -727,7 +727,7 @@ li {
 
   .section12-text__subtitle::before {
     left: -45px;
-    bottom: 56px;
+    bottom: 39px;
   }
 }
 
@@ -806,7 +806,7 @@ li {
 
   .section11-info__subtitle::before {
     left: -60px;
-    bottom: 57px;
+    bottom: 55px;
   }
 
   .section12 {
@@ -834,7 +834,7 @@ li {
     font-weight: 500;
     color: black;
     font-family: 'Acrom', sans-serif;
-    margin-left: 57px;
+    margin-left: 63px;
   }
 
   .section12-info {
@@ -860,8 +860,8 @@ li {
   }
 
   .section12-text__subtitle::before {
-    left: -52px;
-    bottom: 42px;
+    left: -62px;
+    bottom: 41px;
   }
 }
 

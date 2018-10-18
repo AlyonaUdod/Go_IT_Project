@@ -65,13 +65,13 @@ margin: 0 auto;
             }
 &__title{
     width: 144px;
-    @include text-style ($size: 12px, $weight: 700,$color: $black);
+    @include text-style ($size: 12px, $weight: 900,$color: $black);
     margin-bottom: 14px;
     text-transform: uppercase;
 
     @media (min-width: 480px){
         width: 215px;
-        @include text-style ($size: 15px, $weight: 700,$color: $black);
+        @include text-style ($size: 15px, $weight: 900,$color: $black);
         margin-bottom: 21px;
     }
     @media (min-width: 768px){
@@ -109,24 +109,24 @@ margin: 0 auto;
     @media (min-width: 768px){
         width: 137px;
         @include text-style ($size: 8px, $weight: 500,$color: $black);
-        margin-left: 41px;
+        margin-left: 48px;
         
     }
     @media (min-width: 960px){
         width: 171px;
         @include text-style ($size: 11px, $weight: 500,$color: $black);
-        margin-left: 50px;
+        margin-left: 55px;
         
     }
     @media (min-width: 1200px){
-        width: 152px;
+        width: 155px;
         @include text-style ($size: 10px, $weight: 500,$color: $black);
         margin-left: 50px;
     }
     @media (min-width: 1440px){
         width: 183px;
         @include text-style ($size: 11px, $weight: 500,$color: $black);
-        margin-left: 57px;
+        margin-left: 63px;
     }
 }
 }
@@ -175,7 +175,7 @@ margin: 0 auto;
         margin: 0px 0 21px;
     }
     @media (min-width: 1200px){
-        width: 142px;
+        width: 110px;
         @include text-style ($size: 10px, $weight: 900,$color: $black);
         margin: 0px 0 18px;
     }
@@ -217,22 +217,22 @@ margin: 0 auto;
     bottom: 38px;
     @media (min-width: 480px){
         left: -27px;
-        bottom: 47px;
+        bottom: 48px;
         }
         @media (min-width: 768px){
-            left: -36px;
+            left: -45px;
             bottom: 33px;
             }
             @media (min-width: 960px){
-                left: -45px;
+                left: -53px;
                 bottom: 43px;
                 }
                 @media (min-width: 1200px){
                     left: -45px;
-                    bottom: 56px;
+                    bottom: 39px;
                     }
                     @media (min-width: 1440px){
-                        left: -52px;
-                        bottom: 42px;
+                        left: -62px;
+                        bottom: 41px;
                         }
 }
