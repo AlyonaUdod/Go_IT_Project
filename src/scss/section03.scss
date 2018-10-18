@@ -120,13 +120,6 @@
         &__par, &__text, &__title-par, &__list-item-title, &__list-item-par {
             font-size: 13px;
         }
-
-        &__par-conteiner {
-            width: 245px;
-        }
-        &__par {
-            width: 176px;
-        }
         &__span-02 {
             width: 153px;
         }
@@ -138,6 +131,12 @@
         }
         &__pretitle {
             width: 257px;
+        }
+        &__title-par {
+            width: 200px;
+        }
+        &__par-conteiner {
+            width: 247px;
         }
     }
 }
@@ -156,6 +155,11 @@
         &__title {
             font-size: 27px;
             margin: 35px 0 13px;
+            width: 242px;
+            background-color: $white;
+        }
+        &__title-par {
+            margin: auto 25px;
         }
         &__flex-conteiner {
             width: 43%;
@@ -176,13 +180,6 @@
             margin-top: 35px;
             margin-bottom: 29px;
             }
-        &__title {
-            width: 242px;
-            background-color: $white;
-            }
-            &__title-par {
-                margin: 0 0 0 10px;
-            }
         &__par-conteiner {
             margin: 29px 18px 57px;
             }
@@ -200,7 +197,7 @@
             width: 30%;
             }
         &__flex-conteiner-03 {
-            width: 70%;
+            width: 64%;
             }
         &__span-06 {
             display: block;
@@ -255,6 +252,9 @@
         &__par-conteiner {
             margin: 46px 27px 57px;
         }
+        &__title-par {
+            margin: auto;
+        }
     }
 }
 @media (min-width: 1200px) {
@@ -303,9 +303,6 @@
         &__title {
             font-size: 36px;
         }
-        &__title-par {
-            margin: 0 0 0 25px;
-        }
         &__span-01 {
             width: 84px;
         }
@@ -320,6 +317,9 @@
         }
         &__list-item {
             margin-bottom: 43px;
+        }
+        &__title-par {
+            margin: auto 25px;
         }
     }    
 }
