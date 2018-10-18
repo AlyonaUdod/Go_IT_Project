@@ -18,7 +18,7 @@
 
 .sec02-title-wrapper {
     margin:52px auto 28px;
-    width:190px;
+    width:220px;
     @media (min-width: 480px) {
         width: 286px;  
         margin:78px auto 43px;   
@@ -46,28 +46,29 @@
 .sec02-title {
     margin-bottom: 28px;
     text-align:center;
-    @include text-style (12px, 700);
+    @include text-style (12px, 900, $black);
     text-transform: uppercase;
         @media (min-width: 480px) {
-            @include text-style (18px, 700);
+            @include text-style (18px, 900, $black);
             margin-bottom: 42px;  
         }
         @media (min-width: 768px) {
-            @include text-style (26px, 700);
+            @include text-style (26px, 900, $black);
+            text-align:left;
             margin-bottom: 24px;
             width:180px; 
         }
         @media (min-width: 960px) {
-            @include text-style (33px, 700); 
+            @include text-style (33px, 900, $black); 
             width:223px;
         }
         @media (min-width: 1200px) {
-            @include text-style (29px, 700);
+            @include text-style (29px, 900, $black);
             margin-bottom: 24px; 
             width:200px;
         }
         @media (min-width: 1440px) {
-            @include text-style (35px, 700);
+            @include text-style (35px, 900, $black);
             margin-bottom: 33px; 
             width:239px;
         }

@@ -35,30 +35,30 @@
 }
 
 .sec06-title {
-    @include text-style (12px, 700);
+    @include text-style (12px, 900, $black);
     text-transform: uppercase;
     width:113px;
     margin-bottom: 10px;
         @media (min-width: 480px) {
-            @include text-style (18px, 700);
+            @include text-style (18px, 900, $black);
             margin-bottom: 15px;
-            width:169px;
+            width:170px;
         }
         @media (min-width: 768px) {
-            @include text-style (26px, 700);
+            @include text-style (26px, 900, $black);
             margin: 0px;
             
         }
         @media (min-width: 960px) {
-            @include text-style (34px, 700);
+            @include text-style (34px, 900, $black);
             width:212px;
         }
         @media (min-width: 1200px) {
-            @include text-style (30px, 700);
+            @include text-style (30px, 900, $black);
             width:187px;
         }
         @media (min-width: 1440px) {
-            @include text-style (36px, 700);
+            @include text-style (36px, 900, $black);
             width:227px;
         }
 }
@@ -128,7 +128,7 @@
             margin:0px 0px 55px;
         }
         @media (min-width: 960px){
-            width:314px;
+            width:344px;
             height:212px;
             margin:0px 0px 69px;
         }
@@ -151,7 +151,6 @@
         }
     }
 
-
 .sec06-text {
     width:297px;
     margin:auto;
@@ -159,10 +158,9 @@
         width:446px;
     }
     @media (min-width: 768px){
-        width:304px;
+        // width:304px;
         margin-left:54px;
     }
-
 
         &__subtitle {
             display: inline;
@@ -178,8 +176,7 @@
                 @media (min-width: 768px) {
                     @include text-style (9px, 900, $white);
                     // width:112px;
-                   }
-               
+                   }            
         }
         &__fact {
             @include text-style (9px, 700);
