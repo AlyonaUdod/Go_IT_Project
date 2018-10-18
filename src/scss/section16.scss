@@ -102,6 +102,7 @@
   &__name {
     @include text-style ($size: 5px, $weight: 800, $color: $text-color);
     width: 80px;
+    opacity: .5;
   }
 
   &__button {
