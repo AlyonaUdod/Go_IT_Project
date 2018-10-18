@@ -120,6 +120,13 @@
         &__par, &__text, &__title-par, &__list-item-title, &__list-item-par {
             font-size: 13px;
         }
+
+        &__par-conteiner {
+            width: 245px;
+        }
+        &__par {
+            width: 176px;
+        }
         &__span-02 {
             width: 153px;
         }
@@ -148,6 +155,7 @@
         }
         &__title {
             font-size: 27px;
+            margin: 35px 0 13px;
         }
         &__flex-conteiner {
             width: 43%;
@@ -172,8 +180,11 @@
             width: 242px;
             background-color: $white;
             }
+            &__title-par {
+                margin: 0 0 0 10px;
+            }
         &__par-conteiner {
-            margin: 29px auto 57px;
+            margin: 29px 18px 57px;
             }
         &__list {
             padding-left: 21px;
@@ -242,7 +253,7 @@
             left: -26px;
         }
         &__par-conteiner {
-            margin-top: 46px;
+            margin: 46px 27px 57px;
         }
     }
 }
@@ -291,6 +302,9 @@
         }
         &__title {
             font-size: 36px;
+        }
+        &__title-par {
+            margin: 0 0 0 25px;
         }
         &__span-01 {
             width: 84px;
