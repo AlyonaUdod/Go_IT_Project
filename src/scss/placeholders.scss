@@ -78,3 +78,13 @@
         height: 6px;
     } 
 }
+%s9-orange-mark {
+    counter-increment: s9-item-number 1;
+    content: "[\a0 00" counter(s9-item-number) " \a0]";
+    background: $orange;
+    color: $white;
+    position: absolute;
+    font-size: 9px;
+    font-weight: bold;
+    line-height: 0.9;
+}
