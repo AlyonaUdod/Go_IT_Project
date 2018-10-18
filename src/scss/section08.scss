@@ -76,18 +76,19 @@
         padding-left: 45px;
     }
     .sec08__conclution{
-        width: 240px;
+        width: 220px;
         margin: 30px auto 0;
         padding-left: 15px;
         position: relative;
-        @include text-style (10px, 600,$orange);
+        @include text-style (9px, 500,$orange);
     }
     .sec08__conclution::before{
-       content: "/";
-       @include text-style (18px, 900,$black);
-        top: 0;
-        left: 0;
-       position: absolute;
+        content: "";
+        position: absolute;
+        height: 1.5px;
+        width: 15px;
+        background: #000;
+        transform: translate(-160%,600%) rotate(-55deg);
     }
     //SEC08 480PX FIRST PART
     @media (min-width: 480px) and (max-width:767px){
@@ -113,7 +114,6 @@
         padding-left: 35px;
         margin: 25px auto 0;
     }
-
     //SEC08 480PX  SECOND PART
     .sec08__info{
         margin-top: 60px;
@@ -152,8 +152,7 @@
         @include text-style (14px, 600,$orange);
     }
     .sec08__conclution::before{
-        content: "/";
-        @include text-style (26px, 900,$black);
+        height: 2.5px;
     }
   }
   //SEC08 768PX FIRST PART
@@ -209,7 +208,6 @@
     .sec08__item:not(:nth-child(2n)){
         margin-right: 20px;
     }
-
     .sec08__item:not(:last-child){
         margin-bottom:0;
     }
@@ -233,6 +231,10 @@
         padding-left: 25px;
         @include text-style (9px, 600,$orange);
         width: 100%;
+    }
+    .sec08__conclution::before{
+        width: 19px;
+         height: 2px;
     }
   }
    //SEC08 920PX FIRST PART
@@ -285,6 +287,11 @@
         @include text-style (12px, 600,$orange);
         width: 100%;
     }
+    .sec08__conclution::before{
+        width: 22px;
+        height: 2px;
+        transform: translate(-180%,600%) rotate(-55deg);
+    }
    }
 //SEC08 1200PX FIRST PART
 @media (min-width: 1200px){
@@ -336,6 +343,10 @@
     @include text-style (10px, 600,$orange);
     width: 100%;
     }
+    .sec08__conclution::before{
+        width: 22px;
+        height: 2px;
+    }
   }
   @media (min-width: 1440px){
     .sec08__main-wr{
@@ -386,9 +397,5 @@
    @include text-style (12px, 600,$orange);
    width: 100%;
 }
-.sec08__conclution::before{
-    content: "/";
-    @include text-style (28px, 900,$black);
-      }
     }
 }
