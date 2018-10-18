@@ -247,6 +247,7 @@
     &-title {
       font-size: 9px;
       font-weight: 700;
+      width: 90%;
     }
     &-description {
       line-height: 1.5;
@@ -254,6 +255,7 @@
       font-weight: 400;
       font-size: 10px;
       margin-top: 9px;
+      width: 91%;
     }
   }
   @media (min-width: $s9-screen-sm-min){
@@ -265,6 +267,9 @@
 
       &-title, &-description {
         font-size: 13px;
+      }
+      &-title {
+        width: 100%;
       }
     }
   }
