@@ -46,6 +46,8 @@
     margin-top: 30px;
     &::before {
       @extend %s9-slank-mark;
+      width: 11px;
+      transform:  translate(-160%, 600%) rotate(-55deg);
     }
   }
   &__title {
@@ -89,6 +91,11 @@
     &__pretitle {
       font-size: 13px;
       margin-bottom: 20px;
+      margin-left: 14%;
+      &::before {
+        width: 16px;
+        transform:  translate(-160%, 600%) rotate(-55deg);
+      }
     }
     &__title {
       font-size: 18px;
@@ -130,7 +137,12 @@
     &__pretitle {
       font-size: 9px;
       width: 40%;
-      margin: 0 0 3% 7%;
+      margin: 0 0 3% 10%;
+      &::before {
+        width: 21px;
+        height: 2px;
+        transform:  translate(-160%, 600%) rotate(-55deg);
+      }
     }
     &__title {
       font-size: 27px;
@@ -168,7 +180,12 @@
     &__pretitle {
       font-size: 11px;
       width: 45%;
-      margin: 0 0 5% 6%;
+      margin: 0 0 5% 11%;
+      &::before {
+        width: 27px;
+        height: 2px;
+        transform:  translate(-160%, 600%) rotate(-55deg);
+      }
     }
     &__title {
       font-size: 33px;
@@ -193,6 +210,13 @@
     &__pretitle, &__subtitle {
       font-size: 10px;
     }
+    &__pretitle {
+      &::before {
+        width: 25px;
+        height: 2px;
+        transform:  translate(-160%, 600%) rotate(-55deg);
+      }
+    }
     &__title {
       font-size: 30px;
       width: 84%;
@@ -214,6 +238,13 @@
     }
     &__pretitle, &__subtitle {
       font-size: 12px;
+    }
+    &__pretitle {
+      &::before {
+        width: 29px;
+        height: 3px;
+        transform:  translate(-160%, 600%) rotate(-55deg);
+      }
     }
     &__title {
       font-size: 36px;
