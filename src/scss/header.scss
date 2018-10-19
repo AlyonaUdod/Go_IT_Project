@@ -38,7 +38,7 @@
         display: flex;
         flex-direction: column;
         margin: 0 auto;
-        width: 320px;
+        width: 300px;
     }
 
     .header-field-part1__logo {
@@ -55,6 +55,7 @@
         margin: 14px 0 28px 0;
         width: 161px;
         @include text-style(20px, 700, $white);
+        text-transform: uppercase;
     }
 
     .header-field-part2-left-part__desc {
@@ -99,7 +100,7 @@
 
     .header-field-part2 {
         margin: 0 auto;
-        width: 320px;
+        width: 300px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -107,7 +108,7 @@
     }
 
     .header-field-part2-left-part {
-        width: 320px;
+        width: 300px;
         text-align: center;
         align-items: center;
     }
@@ -115,7 +116,7 @@
     .header-field-part2-left-part__name {
         margin: 14px 0 28px 0;
         width: 243px;
-        @include text-style(30px, 700, $white);
+        @include text-style(28px, 700, $white);
     }
 
     .header-field-part2-right-part {
@@ -295,9 +296,10 @@
     }
 
     .header-field-part2-left-part__name {
-        width: 344px;
+        width: 352px;
         @include text-style(45px, 700, $white);
         margin-bottom: 30px;
+        text-transform: uppercase;
     }
 
     .header-field-part2-left-part__desc {
@@ -447,8 +449,9 @@
     }
 
     .header-field-part2-left-part__name {
-        width: 431px;
+        width: 437px;
         @include text-style(56px, 700, $white);
+        text-transform: uppercase;
     }
 
     .header-field-part2-left-part__desc {
@@ -599,8 +602,9 @@
     }
 
     .header-field-part2-left-part__name {
-        width: 365px;
+        width: 392px;
         @include text-style(50px, 700, $white);
+        text-transform: uppercase;
     }
 
     .header-field-part2-left-part__desc {
