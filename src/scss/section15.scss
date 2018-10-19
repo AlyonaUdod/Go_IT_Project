@@ -228,6 +228,7 @@ margin-top: 70px;
       padding-top: 5px;
         .section15__wrapper-title{
             @include text-style (17px,500,$black);
+            line-height: 1.5;
         }
     }
     .section15__price{

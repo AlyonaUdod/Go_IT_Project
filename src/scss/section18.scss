@@ -328,6 +328,7 @@
     &__thirthparag{
       @include text-style ($size: 9px, $weight: 400,$color: $dark-grey);
       margin-top: 18px;
+
       @media (min-width: 480px) and (max-width:767px){
         font-size: 14px;
         margin-top: 30px;
@@ -341,6 +342,7 @@
       @media (min-width: 960px) and (max-width:1199px){
         font-size: 11px;
       }
+
       @media (min-width: 1200px) and (max-width:1439px){
         font-size: 10px;
       }
@@ -357,6 +359,17 @@
         @media (min-width: 768px) and (max-width:959px){
           
           font-size: 9px;
+        }
+        @media (min-width: 960px) and (max-width:1199px){
+          font-size: 11px;
+        }
+  
+        @media (min-width: 1200px) and (max-width:1439px){
+          font-size: 10px;
+        }
+        @media (min-width: 1440px)
+        {
+          font-size: 12px;
         }
       }
     }
