@@ -40,7 +40,7 @@
       height: 150px;
     }
     @media (min-width: 768px) and (max-width:959px){
-      left: 185px;
+      left: 201px;
       background-image: url(../img/section18-768.png);
       width: 104px;
       height: 215px;
@@ -50,21 +50,21 @@
       width: 215px;
       height: 269px;
       z-index: -1;
-      left: 235px;
+      left: 256px;
       background-image: url(../img/section18-960.png);
     }
     @media (min-width: 1200px) and (max-width:1439px){
       width: 117px;
       height: 241px;
       z-index: -1;
-      left: 235px;
+      left: 225px;
       background-image: url(../img/section18-1200.png);
     }
     @media (min-width: 1440px){
       width: 140px;
       height: 289px;
       z-index: -1;
-      left: 235px;
+      left: 265px;
       background-image: url(../img/section18-1440.png);
     }
     
@@ -92,7 +92,7 @@
     }
 
     &__title{
-      @include text-style ($size: 12px, $weight: 700, $color: $text-color);
+      @include text-style ($size: 12px, $weight: 900, $color: $black);
       text-transform: uppercase;
       @media (min-width: 480px) and (max-width:767px){
         font-size: 18px;
@@ -116,12 +116,12 @@
       @include text-style ($size: 9px, $weight: 400, $color: $text-color);
       position: relative;
       margin-top: 12px;
-      margin-left: 6%;
+      // margin-left: 3%;
       width: 100%;
       @media (min-width: 480px) and (max-width:767px){
         margin-top: 18px;
         font-size: 14px;
-        margin-left: 7%;
+        // margin-left: 7%;
         width: 105%;
       }
       @media (min-width: 768px) and (max-width:959px){
@@ -189,7 +189,7 @@
 
     &__button{
       background: $orange;
-      @include text-style ($size: 7px, $weight: 400, $color: $white);
+      @include text-style ($size: 7px, $weight: 900, $color: $white);
       text-transform: uppercase;
       padding: 11px 27px;
       width: 145px;
@@ -202,22 +202,22 @@
         padding: 16px 40px;
       }
       @media (min-width: 768px) and (max-width:959px){
-        margin: 30px 0;
+        margin: 30px 44px 0;
       }
       @media (min-width: 960px) and (max-width:1199px){
-        margin: 30px 0;
-        width: 283px;
+        margin: 30px 55px 0;
+        width: 183px;
         padding: 14px 34px;
         font-size: 8px;
       }
       @media (min-width: 1200px) and (max-width:1439px){
-        margin: 33px 0;
+        margin: 33px 50px 0;
         width: 164px;
         padding: 13px 30px;
         font-size: 7.5px;
       }
       @media (min-width: 1440px){
-        margin: 40px 0;
+        margin: 40px 60px 0;
         width: 196px;
         padding: 15px 36px;
         font-size: 9px;
@@ -256,17 +256,7 @@
       flex-wrap: wrap;
     }
 
-    &-secondcolumn2{
-      @media (min-width: 960px) and (max-width:1199px){
-        width: 283px;
-      }
-      @media (min-width: 1200px) and (max-width:1439px){
-        width: 252px;
-      }
-      @media (min-width: 1440px){
-        width: 302px;
-      }
-    }
+    
 
 
     &__title{
@@ -395,4 +385,16 @@
       }
     }
   } 
+
+  &-secondcolumn2{
+    @media (min-width: 960px) and (max-width:1199px){
+      width: 283px;
+    }
+    @media (min-width: 1200px) and (max-width:1439px){
+      width: 252px;
+    }
+    @media (min-width: 1440px){
+      width: 302px;
+    }
+  }
 }
