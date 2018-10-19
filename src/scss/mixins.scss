@@ -16,14 +16,14 @@
       &__title {
         font-size: $titleFontSize;
       }
-  
+
       &__subtitle {
         font-size: $subtFontSize;
         padding-left: $leftPadding;
       }
     }
   }
-  
+
   @mixin s9-middle-block-view ($screenResolution, $topMargin, $descrFontSize, $xShift, $pElemenSize) {
     @media (min-width:$screenResolution) {
       &__middle-wrapper {
@@ -32,7 +32,7 @@
       &__description {
         font-size: $descrFontSize;
       }
-  
+
       &__list-item {
         &-title {
           font-size: $descrFontSize;
@@ -49,3 +49,57 @@
     }
   }
 
+@mixin sec10-after-before ($width:25px, $height: 49px, $back-img: url('../img/sec10-320-01.png'), $top: 0, $right: 0) {
+width: $width;
+height: $height;
+background-image: $back-img;
+top: $top;
+right: $right;
+display: block;
+content: "";
+position: absolute;
+}
+
+@mixin s17-blue-box-view($screenResolution, $descriptionFontSize, $priceFontSize, $priceNoeFontSize, $width:40%) {
+  @media(min-width:$screenResolution){
+      width: $width;
+      &-description {
+          font-size:$descriptionFontSize;
+      }
+      &-price {
+          font-size: $priceFontSize;
+      }
+      &-description-now {
+          font-size:$descriptionFontSize;
+      }
+      &-price-now {
+          font-size: $priceNoeFontSize;
+          & > span {
+              font-size: $descriptionFontSize;
+          }
+      }
+  } 
+}
+
+@mixin s17-description-block-view($screenResolution, $titleSize, $blackPSize) {
+  @media (min-width:$screenResolution) {
+      &__description {
+          &-title {
+              font-size: $titleSize;
+          }
+          &-black {
+              font-size: $blackPSize;
+          }
+          &-grey {
+              font-size: $blackPSize - 1;
+          }
+
+          &-orange {
+              font-size: $blackPSize;
+          }
+          &-buy-btn {
+              font-size: $blackPSize - 3;
+          }
+      } 
+  }
+}
