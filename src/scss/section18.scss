@@ -1,4 +1,4 @@
-.section17{
+.section18{
   margin-top: 64px ;
   @extend %section-rules ;
   position: relative;
@@ -28,20 +28,20 @@
     display: block;
     content: "";
     position: absolute;
-    background-image: url(../img/section17-320.png);
+    background-image: url(../img/section18-320.png);
     background-repeat: no-repeat;
     width: 49px;
     height: 101px;
     left: 26px;
     @media (min-width: 480px) and (max-width:767px){
       left: 35px;
-      background-image: url(../img/section17-480.png);
+      background-image: url(../img/section18-480.png);
       width: 73px;
       height: 150px;
     }
     @media (min-width: 768px) and (max-width:959px){
       left: 185px;
-      background-image: url(../img/section17-768.png);
+      background-image: url(../img/section18-768.png);
       width: 104px;
       height: 215px;
       z-index: -1;
@@ -51,21 +51,21 @@
       height: 269px;
       z-index: -1;
       left: 235px;
-      background-image: url(../img/section17-960.png);
+      background-image: url(../img/section18-960.png);
     }
     @media (min-width: 1200px) and (max-width:1439px){
       width: 117px;
       height: 241px;
       z-index: -1;
       left: 235px;
-      background-image: url(../img/section17-1200.png);
+      background-image: url(../img/section18-1200.png);
     }
     @media (min-width: 1440px){
       width: 140px;
       height: 289px;
       z-index: -1;
       left: 235px;
-      background-image: url(../img/section17-1440.png);
+      background-image: url(../img/section18-1440.png);
     }
     
     
