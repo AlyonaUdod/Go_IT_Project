@@ -1,7 +1,7 @@
 %section-rules {
-    margin: auto;
-    width: 300px;
-    padding: 0 10px;
+  margin: auto;
+  width: 300px; 
+  padding: 0 10px;
 
     @media (min-width: 480px) and (max-width:767px) {
         width: 450px;
@@ -9,8 +9,8 @@
     }
 
     @media (min-width: 768px) and (max-width:959px) {
-        width: 640px;
-        padding: 0;
+      width: 640px;
+      padding: 0;
     }
 
     @media (min-width: 960px) and (max-width:1199px) {
@@ -49,27 +49,17 @@
 }
 
 %black-line {
-    display: block;
-    content: "";
-    width: 14px;
-    height: 2px;
-    background-color: $black;
-    position: absolute;
+  display: block;
+  content: "";
+  width: 14px;
+  height: 2px;
+  background-color: $black;
+  position: absolute;
 
-    @media (min-width: 480px) and (max-width:767px) {
-        width: 20px;
-        height: 4px;
-    }
-
-    @media (min-width: 768px) and (max-width:959px) {
-        width: 29px;
-        height: 5px;
-    }
-
-    @media (min-width: 960px) and (max-width:1199px) {
-        width: 36px;
-        height: 5px;
-    }
+  @media (min-width: 480px) and (max-width:767px) {
+    width: 20px;
+    height: 4px;
+  }
 
     @media (min-width: 1200px) and (max-width:1439px) {
         width: 32px;

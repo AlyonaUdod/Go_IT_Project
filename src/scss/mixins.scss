@@ -1,8 +1,8 @@
 @mixin text-style ($size: 14px, $weight: 400, $color: $text-color) {
-    font-size: $size;
-    font-weight: $weight;
-    color: $color;
-    font-family: 'Acrom', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  font-family: 'Acrom', sans-serif;
 }
 
 @mixin display-options ($justify: space-between, $display: flex, $flow: row wrap) {
