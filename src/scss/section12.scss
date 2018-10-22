@@ -37,17 +37,18 @@ height: auto;
 }    
 }
 
-.section12__img img {
-    width: 300px;
-    height: auto;
-    margin: 0 auto;
-        @media (min-width: 480px) {
-            width: 445px;
-        }
-        @media (min-width: 768px){
-            width: 100%;
-        }    
-}
+// .section12__img img {
+//     width: 300px;
+//     height: auto;
+//     margin: 0 auto;
+
+//         @media (min-width: 480px) {
+//             width: 445px;
+//         }
+//         @media (min-width: 768px){
+//             width: 100%;
+//         }    
+// }
 
 
 .section12-text{
@@ -262,3 +263,16 @@ height: auto;
 //         width: 100%;
 //     }    
 // }
+
+.section12__img img {
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+    
+        @media (min-width: 480px) {
+            width: 445px;
+        }
+        @media (min-width: 768px){
+            width: 100%;
+        }    
+}
