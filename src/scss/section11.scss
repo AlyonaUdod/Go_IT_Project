@@ -33,13 +33,13 @@
 &__img{
     order: 1;
     height: auto;
+    width: 100%;
     margin: 0 auto;
     @media (min-width: 768px){
         order: 0;
         width: 50%;
     }    
-}
-   
+}   
 }
 .section11-info{
     order: 0;
@@ -327,4 +327,18 @@ bottom: 64px;
     left: -60px;
     bottom: 55px;
 }
+}
+
+
+.section11__img img {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+
+        @media (min-width: 480px) {
+            width: 300px;
+        }
+        @media (min-width: 768px){
+            width: 100%;
+        }    
 }
