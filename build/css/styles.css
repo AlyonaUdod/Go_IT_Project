@@ -1286,6 +1286,12 @@ ul {
   margin: 0 auto;
 }
 
+.section11__img img {
+  width: 200px;
+  height: auto;
+  margin: 0 auto;
+}
+
 .section11-info {
   order: 0;
   margin: auto;
@@ -1363,12 +1369,6 @@ ul {
   bottom: 64px;
 }
 
-.section11__img img {
-  width: 200px;
-  height: auto;
-  margin: 0 auto;
-}
-
 .section12 {
   width: 300px;
   display: flex;
@@ -1381,6 +1381,12 @@ ul {
   margin: 0 auto;
   width: 100%;
   height: auto;
+}
+
+.section12__img img {
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
 }
 
 .section12-text {
@@ -1434,12 +1440,6 @@ ul {
 .section12-text__subtitle::before {
   left: -18px;
   bottom: 38px;
-}
-
-.section12__img img {
-  width: 300px;
-  height: auto;
-  margin: 0 auto;
 }
 
 .section13 {
@@ -2689,6 +2689,10 @@ ul {
     margin: 77px auto;
   }
 
+  .section11__img img {
+    width: 300px;
+  }
+
   .section11-info__title {
     font-size: 23px;
     font-weight: 900;
@@ -2738,10 +2742,6 @@ ul {
     bottom: 80px;
   }
 
-  .section11__img img {
-    width: 300px;
-  }
-
   .section12 {
     width: 450px;
     margin-top: 68px;
@@ -2749,6 +2749,10 @@ ul {
 
   .section12__img {
     margin: 0 auto;
+  }
+
+  .section12__img img {
+    width: 445px;
   }
 
   .section12-text {
@@ -2800,10 +2804,6 @@ ul {
   .section12-text__subtitle::before {
     left: -27px;
     bottom: 48px;
-  }
-
-  .section12__img img {
-    width: 445px;
   }
 
   .section13 {
@@ -3847,6 +3847,10 @@ ul {
     width: 50%;
   }
 
+  .section11__img img {
+    width: 100%;
+  }
+
   .section11-info {
     order: 1;
     width: 50%;
@@ -3914,15 +3918,15 @@ ul {
     bottom: 44px;
   }
 
-  .section11__img img {
-    width: 100%;
-  }
-
   .section12 {
     width: 640px;
     flex-wrap: nowrap;
     justify-content: space-between;
     margin-top: 106px;
+  }
+
+  .section12__img img {
+    width: 100%;
   }
 
   .section12-text {
@@ -3973,10 +3977,6 @@ ul {
   .section12-text__subtitle::before {
     left: -45px;
     bottom: 33px;
-  }
-
-  .section12__img img {
-    width: 100%;
   }
 
   .section13 {
