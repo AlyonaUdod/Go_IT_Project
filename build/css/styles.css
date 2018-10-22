@@ -1377,7 +1377,6 @@ ul {
 }
 
 .section12__img {
-  display: block;
   margin: 0 auto;
   width: 100%;
   height: auto;
@@ -2745,10 +2744,6 @@ ul {
   .section12 {
     width: 450px;
     margin-top: 68px;
-  }
-
-  .section12__img {
-    margin: 0 auto;
   }
 
   .section12__img img {
